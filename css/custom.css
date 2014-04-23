@@ -203,10 +203,11 @@ h5 {
     margin-top: -70px;
 }
 .section-how-work {
-    padding: 50px 0;
-    color: #fff;
-    font-family: Roboto;
-    font-weight: 100;
+    padding: 0px 0 50px;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    color: #f3f6fd;
 }
 .section-why {
     background: url(../img/white_grey_bg.png) repeat scroll 0 0 rgba(0, 0, 0, 0);

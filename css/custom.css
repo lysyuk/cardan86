@@ -8,7 +8,7 @@ body, html {
 body, h1, h2, h3, h4, h6 {
     font-size: 14px;
 }
- h5 {
+h5 {
     font-size: 21px;
     font-weight: bold;
 }
@@ -115,23 +115,23 @@ body, h1, h2, h3, h4, h6 {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 @media (max-width: 767px) {
-.intro-message {
-    padding-bottom: 15%;
-}
-.intro-message > h1 {
-    font-size: 3em;
-}
-ul.intro-social-buttons > li {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-}
-ul.intro-social-buttons > li:last-child {
-    margin-bottom: 0;
-}
-.intro-divider {
-    width: 100%;
-}
+    .intro-message {
+        padding-bottom: 15%;
+    }
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+    .intro-divider {
+        width: 100%;
+    }
 }
 .network-name {
     font-size: 14px;
@@ -140,10 +140,10 @@ ul.intro-social-buttons > li:last-child {
     text-transform: uppercase;
 }
 .section-line01 {
-    padding: 50px 0;
-    font-family: Roboto;
+    padding: 0px 0 50px;
+    font-family: Open Sans;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     color: #f3f6fd;
 }
 .line-icon {
@@ -278,25 +278,25 @@ ul.intro-social-buttons > li:last-child {
     margin-top: 0;
 }
 @media (max-width: 1199px) {
-ul.banner-social-buttons {
-    float: left;
-    margin-top: 15px;
-}
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
 }
 @media (max-width: 767px) {
-.banner h2 {
-    font-size: 3em;
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-}
-ul.banner-social-buttons > li {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-}
-ul.banner-social-buttons > li:last-child {
-    margin-bottom: 0;
-}
+    .banner h2 {
+        font-size: 3em;
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    }
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
 }
 footer {
     background-color: #899ba3;
@@ -421,7 +421,7 @@ footer img {
     padding: 4px 38px;
 }
 .btn-template-modal:hover {
-#    background: background: url(../img/modal_btnh.png) no-repeat;;
+    #    background: background: url(../img/modal_btnh.png) no-repeat;;
 }
 .titleb {
     font-family: Segoe UI;
@@ -757,35 +757,35 @@ footer img {
     left: -45px;
 }
 .btn-top-form:hover {
-#    background: url("../img/know_sbtnh.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    #    background: url("../img/know_sbtnh.png") no-repeat scroll center center rgba(0, 0, 0, 0);
 }
 .btn-know-big {
     background: url("../img/know_btn.png") no-repeat scroll center center rgba(0, 0, 0, 0);
     padding: 50px 250px;
 }
 .btn-know-big:hover {
-#    background: url("../img/know_btnh.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    #    background: url("../img/know_btnh.png") no-repeat scroll center center rgba(0, 0, 0, 0);
 }
 .btn-know-price {
     background: url("../img/know_price_btn.png") no-repeat scroll center center rgba(0, 0, 0, 0);
     padding: 25px 90px;
 }
 .btn-know-price:hover {
-#    background: url("../img/know_price_btnh.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    #    background: url("../img/know_price_btnh.png") no-repeat scroll center center rgba(0, 0, 0, 0);
 }
 .btn-discount {
     background: url("../img/to_btn.png") no-repeat scroll center center rgba(0, 0, 0, 0);
     padding: 55px 190px;
 }
 .btn-discount:hover {
-#    background: url("../img/to_btnh.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    #    background: url("../img/to_btnh.png") no-repeat scroll center center rgba(0, 0, 0, 0);
 }
 .btn-comments {
     background: url("../img/comment_btn.png") no-repeat scroll center center rgba(0, 0, 0, 0);
     padding: 55px 190px;
 }
 .btn-comments:hover {
-#    background: url("../img/comment_btnh.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    #    background: url("../img/comment_btnh.png") no-repeat scroll center center rgba(0, 0, 0, 0);
 }
 
 .top-form-bg {

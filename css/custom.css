@@ -164,7 +164,8 @@ h5 {
     background-color: #010101;
 }
 .engine-text {
-    color: #f3f6fd;
+    color: #333;
+    font-size: 18px;
 }
 .part-block {
     background: url(../img/block_bg01.jpg) no-repeat;

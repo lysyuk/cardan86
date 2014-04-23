@@ -47,8 +47,9 @@ body, h1, h2, h3, h4, h6 {
 .headtitle {
     color: #7bc1ff;
     font-size: 40px;
-    font-weight: bold;
-    font-family: Open Sans;
+    font-weight: 100;
+    font-family: Roboto;
+    text-transform: uppercase;
 }
 .head_bg {
     background: url(../img/head_bg.png) no-repeat center center;
@@ -63,7 +64,7 @@ body, h1, h2, h3, h4, h6 {
 }
 .contactphone {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 400;
     color: white;
 }
 .contactmail a {

@@ -87,9 +87,10 @@ h5 {
 }
 .blue-title {
     color: #7bc1ff;
-    font-size: 42px;
-    font-family: Open Sans;
-    font-weight: 800;
+    font-family: Jura;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 .white-title {
     font-size: 36px;
@@ -158,9 +159,10 @@ h5 {
 }
 .section-engine-kpp {
     padding: 50px 0;
+    background-color: #010101;
 }
 .engine-text {
-    color: #fff;
+    color: #f3f6fd;
 }
 .part-block {
     background: url(../img/block_bg01.jpg) no-repeat;

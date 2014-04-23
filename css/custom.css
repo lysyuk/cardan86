@@ -47,9 +47,10 @@ body, h1, h2, h3, h4, h6 {
 .headtitle {
     color: #7bc1ff;
     font-size: 40px;
-    font-weight: 100;
-    font-family: Roboto;
+    font-weight: 600;
+    font-family: Jura;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .head_bg {
     background: url(../img/head_bg.png) no-repeat center center;
@@ -142,7 +143,7 @@ ul.intro-social-buttons > li:last-child {
     padding: 50px 0;
     font-family: Roboto;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
     color: #f3f6fd;
 }
 .line-icon {

@@ -12,6 +12,9 @@ h5 {
     font-size: 21px;
     font-weight: bold;
 }
+.form-control {
+    color: #f9bf4b;
+}
 #menu {
     background: url(../img/black_texture_bg.jpg);
     //padding: 20px 0 0;

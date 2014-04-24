@@ -26,18 +26,27 @@
     <body>
 
         <!-- ============================== ВЕРХУШКА ========================== -->
-        <div class="top">
+        <div id="top"></div>
+        <div id="menu" class="top">
             <div class="container">
                 <div class="row topp">
+                    <div class="col-md-12 grey_bottom_border"></div>
                     <div class="col-md-4">
-                        <a href="/"><img src="img/top_logo.png"></a>
+                        <a href="#top"><img src="img/top_logo.png"></a>
                     </div>
-
-                    <div class="col-md-3 col-md-offset-5  text-center">
+                    <div class="col-md-3 links">
+                        <a href="#link1">Контрактные двигатели</a><br>
+                        <a href="#link2">Запчасти на заказ</a>
+                    </div>
+                    <div class="col-md-2 links">
+                        <a href="#link3">Акция</a><br>
+                        <a href="#link4">Почему выбирают нас</a>
+                    </div>
+                    <div class="col-md-3 text-center">
                         <span class="contactphone">7.444.000.00.00</span>
                         <button data-target="#design" data-toggle="modal" class="btn btn-lg btn-top-call wobble-horizontal"></button>
                     </div>
-                    <div class="col-md-12 grey_bottom_border"></div>        
+                            
                 </div><!-- /row -->
             </div><!-- /.container -->
         </div>
@@ -185,7 +194,7 @@
 
         <!-- ================================ ДВИГАТЕЛИ И КПП =========================== -->
 
-        <div class="section-engine-kpp">
+        <div id="link1" class="section-engine-kpp">
 
             <div class="container">
                 <div class="col-md-12 text-center blue-title">
@@ -224,7 +233,7 @@
 
         <!-- ================================ КУЗОВНЫЕ ЗАПЧАСТИ =========================== -->
 
-        <div class="section-kuzov-part">
+        <div id="link2" class="section-kuzov-part">
 
             <div class="container">
 
@@ -327,7 +336,7 @@
 
         <!-- ================================ СКИДКИ =========================== -->
 
-        <div class="section-discount">
+        <div id="link3" class="section-discount">
 
             <div class="container">
                 <div class="col-md-12 text-center blue-title">
@@ -407,7 +416,7 @@
 
         <!-- ================================ ПОЧЕМУ ВЫБИРАЮТ НАС =========================== -->
 
-        <div class="section-why">
+        <div id="link4" class="section-why">
 
             <div class="container">
                 <div class="col-md-12 text-center grey-title">
@@ -592,10 +601,12 @@
             <!-- /modal form -->
         </div>
         <!-- JavaScript -->
-        <script src="js/jquery-1.10.2.js"></script>
+        <script src="js/jquery-1.10.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.countdown.js"></script>
+         <script src="js/jquery.scrollTo.min.js"></script>
         <script src="js/script.js"></script>
-        <script src="js/bootstrap.js"></script>
+        
 
         <!--<script  type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>-->
 

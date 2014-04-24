@@ -85,6 +85,16 @@ h5 {
     font-weight: 400;
     padding: 3px 20px;
 }
+.section-coffee{
+    padding: 100px 0;
+    min-height: 500px;
+    background: url(../img/coffee.jpg) no-repeat center center scroll;
+    -moz-background-size:cover;
+    -webkit-background-size:102% auto;
+    -khtml-background-size:cover;
+    -o-background-size:102% auto;
+    background-size:cover;
+}
 .lead {
     font-size: 18px;
     font-weight: 400;
@@ -1040,7 +1050,12 @@ footer img {
 }
 .kofe-text {
     position: relative;
-    text-align: center;
-    margin-top: -140px;
-    margin-bottom: 60px;
+    text-align: center;  
+    color: #f9bf46;
+    font-family: Jura;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.75);
+    border-color: #000;
 }

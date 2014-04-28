@@ -24,18 +24,9 @@ $(document).ready(function() {
     }
 
     $('#countdown').countdown({
-        timestamp: ts,
-        callback: function(days, hours, minutes, seconds) {
-
-            var message = "";
-
-            message += "Дней: " + days + ", ";
-            message += "часов: " + hours + ", ";
-            message += "минут: " + minutes + " и ";
-            message += "секунд: " + seconds + " <br />";
-
-
-            note.html(message);
-        }
+        image: 'img/digits.png',
+        startTime: '01:12:12:00'
     });
+
+
 });

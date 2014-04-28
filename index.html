@@ -337,38 +337,31 @@
         <!-- ================================ СКИДКИ =========================== -->
 
         <div id="link3" class="section-discount">
-
+            <video autoplay loop poster="video/poster.jpg">                
+                <source src="video/video.mp4" type="video/mp4">
+                <source src="video/video.webm" type="video/webm">
+            </video>
             <div class="container">
-                <div class="col-md-12 text-center blue-title">
+                <div class="col-md-12 text-center blue-title sell">
                     УСПЕЙ ПОЛУЧИТЬ СКИДКУ НА КОМПЛЕКТ ВЕСЕННЕГО ТО
                 </div>
 
                 <div class="row">
                     <div class="col-md-12 discount-bg text-center">
                         <div class="col-md-10 col-md-offset-1 timer-digits">
-                            <div id="countdown"></div>
-                            <div class="hms">часы минуты секунды</div>
-                            <!--<img class="dig-bg" src="img/timer_bg.png">-->
-                        </div>
-
-                        <div class="col-md-10 col-md-offset-1 timer-text">
-                            <img src="img/timer_text_bg.png">
-                        </div>
-
+                            <div id="countdown" class="center-block"></div>
+                            <!--<div class="desc">
+                                <div>Días</div>
+                                <div>Horas</div>
+                                <div>Minutos</div>
+                                <div>Segundos</div>
+                            </div>-->
+                        </div>    
                         <div class="col-md-10 col-md-offset-1">
                             <button data-target="#design" data-toggle="modal" class="btn btn-lg btn-discount wobble-vertical"></button>
                         </div>
                     </div>
-
                 </div>
-
-                <!--<div class="row test">
-                  <div class="col-md-8 col-md-offset-2">
-                    <div id="countdown"></div>
-                    <div class="hms">часы минуты секунды</div>
-                  </div>
-                </div>-->
-
             </div><!-- /.container -->
         </div><!-- /.content-section-a -->
         <!-- ================================ СКИДКИ =========================== -->
@@ -381,7 +374,6 @@
                 <div class="col-md-12 text-center white-title">
                     КАК МЫ РАБОТАЕМ
                 </div>
-
                 <div class="row">
                     <div class="col-md-2 text-center">
                         <img class="line-icon" src="img/2line_icon01.png">
@@ -407,9 +399,7 @@
                         <img class="line-icon" src="img/2line_icon06.png">
                         <p>Вы вносите оставшуюся часть оплаты</p>
                     </div>
-
                 </div>
-
             </div><!-- /.container -->
         </div><!-- /.content-section-a -->
         <!-- ================================ КАК МЫ РАБОТАЕМ =========================== -->
@@ -422,11 +412,23 @@
                 <div class="col-md-12 text-center grey-title">
                     ПОЧЕМУ ВЫБИРАЮТ НАС
                 </div>
-
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                        <img class="line-icon img-responsive" src="img/3line_icon_all.png"><br/>
+                    <div class="col-md-3 text-center">
+                        <img class="line-icon img-responsive" src="img/3line_icon01.png">
+                        <p>Заявки обрабатываются быстро. Мы ценим время наших клиентов</p>
                     </div>
+                    <div class="col-md-3 text-center">
+                        <img class="line-icon img-responsive" src="img/3line_icon02.png">
+                        <p>Трехценовое предложение позволит выбрать то, что подходит вашему бюджету</p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img class="line-icon img-responsive" src="img/3line_icon03.png">
+                        <p>Мы несем ответственность за качественное обслуживание наших клиентов</p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img class="line-icon img-responsive" src="img/3line_icon04.png">
+                        <p>Все виды ремонтных работ</p>
+                    </div>                   
                 </div>
             </div><!-- /.container -->
         </div><!-- /.content-section-a -->
@@ -442,175 +444,175 @@
             </div>
         </div>
         <div class="section-comments">
-            
-                <div class="container">
-                    <div class="col-md-12 text-center blue-title">
-                        ОТЗЫВЫ КЛИЕНТОВ
-                    </div>
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="col-md-3 text-center">
-                                <img class="line-icon  img-responsive" src="img/comment_img.png">
-                            </div>
+            <div class="container">
+                <div class="col-md-12 text-center blue-title">
+                    ОТЗЫВЫ КЛИЕНТОВ
+                </div>
 
-                            <div class="col-md-6 comment-text comment-block">
-                                <div class="comment-cell">Содержит реальные отзывы от покупателей, воспользовавшихся услугами заказчика. Задача: стилизовать блок отзывов клиентов. (не обязательная идея для обсуждения: сделать фоновый размытый коллаж из фотография покупателей запчастей.) Так  же нарисовать внизу кнопку «Больше отзывов»,которая будет приводить к подгрузке отзывов из соц.сети</div>
-                            </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-3 text-center">
+                            <img class="line-icon  img-responsive" src="img/comment_img.png">
+                        </div>
+
+                        <div class="col-md-6 comment-text comment-block">
+                            <div class="comment-cell">Содержит реальные отзывы от покупателей, воспользовавшихся услугами заказчика. Задача: стилизовать блок отзывов клиентов. (не обязательная идея для обсуждения: сделать фоновый размытый коллаж из фотография покупателей запчастей.) Так  же нарисовать внизу кнопку «Больше отзывов»,которая будет приводить к подгрузке отзывов из соц.сети</div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="col-md-6 col-md-offset-3 comment-text comment-block">
-                                <div class="comment-cell">Содержит реальные отзывы от покупателей, воспользовавшихся услугами заказчика. Задача: стилизовать блок отзывов клиентов. (не обязательная идея для обсуждения: сделать фоновый размытый коллаж из фотография покупателей запчастей.) Так  же нарисовать внизу кнопку «Больше отзывов»,которая будет приводить к подгрузке отзывов из соц.сети</div>
-                            </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-6 col-md-offset-3 comment-text comment-block">
+                            <div class="comment-cell">Содержит реальные отзывы от покупателей, воспользовавшихся услугами заказчика. Задача: стилизовать блок отзывов клиентов. (не обязательная идея для обсуждения: сделать фоновый размытый коллаж из фотография покупателей запчастей.) Так  же нарисовать внизу кнопку «Больше отзывов»,которая будет приводить к подгрузке отзывов из соц.сети</div>
+                        </div>
 
-                            <div class="col-md-3 text-center">
-                                <img class="line-icon  img-responsive" src="img/comment_img.png">
-                            </div>
+                        <div class="col-md-3 text-center">
+                            <img class="line-icon  img-responsive" src="img/comment_img.png">
                         </div>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="col-md-3 text-center">
-                                <img class="line-icon  img-responsive" src="img/comment_img.png">
-                            </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-3 text-center">
+                            <img class="line-icon  img-responsive" src="img/comment_img.png">
+                        </div>
 
-                            <div class="col-md-6 comment-text comment-block">
-                                <div class="comment-cell">Содержит реальные отзывы от покупателей, воспользовавшихся услугами заказчика. Задача: стилизовать блок отзывов клиентов. (не обязательная идея для обсуждения: сделать фоновый размытый коллаж из фотография покупателей запчастей.) Так  же нарисовать внизу кнопку «Больше отзывов»,которая будет приводить к подгрузке отзывов из соц.сети</div>
-                            </div>
+                        <div class="col-md-6 comment-text comment-block">
+                            <div class="comment-cell">Содержит реальные отзывы от покупателей, воспользовавшихся услугами заказчика. Задача: стилизовать блок отзывов клиентов. (не обязательная идея для обсуждения: сделать фоновый размытый коллаж из фотография покупателей запчастей.) Так  же нарисовать внизу кнопку «Больше отзывов»,которая будет приводить к подгрузке отзывов из соц.сети</div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-md-12 text-center">
-                        <button data-target="#design" data-toggle="modal" class="btn btn-lg btn-comments wobble-vertical"></button>
-                    </div>
+                <div class="col-md-12 text-center">
+                    <button data-target="#design" data-toggle="modal" class="btn btn-lg btn-comments wobble-vertical"></button>
+                </div>
 
-                </div><!-- /.container -->
-            </div><!-- /.content-section-a -->
-            <!-- ================================ ОТЗЫВЫ КЛИЕНТОВ =========================== -->
+            </div><!-- /.container -->
+        </div><!-- /.content-section-a -->
+        <!-- ================================ ОТЗЫВЫ КЛИЕНТОВ =========================== -->
 
-            <!-- ================================ НАША КОМАНДА =========================== -->
+        <!-- ================================ НАША КОМАНДА =========================== -->
 
-            <div class="section-crew">
+        <div class="section-crew">
 
-                <div class="container">
-                    <div class="col-md-12 text-center grey-title">
-                        НАША КОМАНДА
-                    </div>
+            <div class="container">
+                <div class="col-md-12 text-center grey-title">
+                    НАША КОМАНДА
+                </div>
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="col-md-3 text-center">
-                                <img class="line-icon  img-responsive" src="img/comment_img.png">
-                            </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-3 text-center">
+                            <img class="line-icon  img-responsive" src="img/comment_img.png">
+                        </div>
 
-                            <div class="col-md-9 crew-text comment-block">
-                                <div class="comment-cell">Содержит реальные отзывы от покупателей, воспользовавшихся услугами заказчика. Задача: стилизовать блок отзывов клиентов. (не обязательная идея для обсуждения: сделать фоновый размытый коллаж из фотография покупателей запчастей.) Так  же нарисовать внизу кнопку «Больше отзывов»,которая будет приводить к подгрузке отзывов из соц.сети</div>
-                            </div>
+                        <div class="col-md-9 crew-text comment-block">
+                            <div class="comment-cell">Содержит реальные отзывы от покупателей, воспользовавшихся услугами заказчика. Задача: стилизовать блок отзывов клиентов. (не обязательная идея для обсуждения: сделать фоновый размытый коллаж из фотография покупателей запчастей.) Так  же нарисовать внизу кнопку «Больше отзывов»,которая будет приводить к подгрузке отзывов из соц.сети</div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="col-md-3 text-center">
-                                <img class="line-icon  img-responsive" src="img/comment_img.png">
-                            </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-3 text-center">
+                            <img class="line-icon  img-responsive" src="img/comment_img.png">
+                        </div>
 
-                            <div class="col-md-9 crew-text comment-block">
-                                <div class="comment-cell">Содержит реальные отзывы от покупателей, воспользовавшихся услугами заказчика. Задача: стилизовать блок отзывов клиентов. (не обязательная идея для обсуждения: сделать фоновый размытый коллаж из фотография покупателей запчастей.) Так  же нарисовать внизу кнопку «Больше отзывов»,которая будет приводить к подгрузке отзывов из соц.сети</div>
-                            </div>
+                        <div class="col-md-9 crew-text comment-block">
+                            <div class="comment-cell">Содержит реальные отзывы от покупателей, воспользовавшихся услугами заказчика. Задача: стилизовать блок отзывов клиентов. (не обязательная идея для обсуждения: сделать фоновый размытый коллаж из фотография покупателей запчастей.) Так  же нарисовать внизу кнопку «Больше отзывов»,которая будет приводить к подгрузке отзывов из соц.сети</div>
                         </div>
                     </div>
+                </div>
 
-                </div><!-- /.container -->
-            </div><!-- /.content-section-a -->
-            <!-- ================================ НАША КОМАНДА =========================== -->
+            </div><!-- /.container -->
+        </div><!-- /.content-section-a -->
+        <!-- ================================ НАША КОМАНДА =========================== -->
 
 
 
-            <!-- ================================ КОНТАКТЫ =========================== -->
+        <!-- ================================ КОНТАКТЫ =========================== -->
 
-            <div class="section-contact">
+        <div class="section-contact">
 
-                <div class="container">
-                    <div class="col-md-12 text-center white-title">
-                        НАШ АДРЕС
-                    </div>
+            <div class="container">
+                <div class="col-md-12 text-center white-title">
+                    НАШ АДРЕС
+                </div>
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="map">
-                                <img src="img/sample_map.jpg" width="100%">
-                            </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="map">
+                            <img src="img/sample_map.jpg" width="100%">
                         </div>
                     </div>
+                </div>
 
-                    <div class="row bottom-line">
-                        <div class="col-md-4 bottom-text">...остались вопросы?</div>
-                        <div class="col-md-4 text-center">
-                            <button data-target="#design" data-toggle="modal" class="btn btn-lg btn-question wobble-vertical"></button>
-                        </div>
-                        <div class="col-md-3 col-md-offset-1 bottom-text">Контакты</div>
+                <div class="row bottom-line">
+                    <div class="col-md-4 bottom-text">...остались вопросы?</div>
+                    <div class="col-md-4 text-center">
+                        <button data-target="#design" data-toggle="modal" class="btn btn-lg btn-question wobble-vertical"></button>
                     </div>
+                    <div class="col-md-3 col-md-offset-1 bottom-text">Контакты</div>
+                </div>
 
-                </div><!-- /.container -->
-            </div><!-- /.content-section-a -->
-            <!-- ================================ КОНТАКТЫ =========================== -->
+            </div><!-- /.container -->
+        </div><!-- /.content-section-a -->
+        <!-- ================================ КОНТАКТЫ =========================== -->
 
-            <!-- modal form -->
+        <!-- modal form -->
 
-            <script>
-                $('#design').modal('toggle')
-            </script>
+        <script>
+            $('#design').modal('toggle')
+        </script>
 
-            <div class="modal fade" id="design" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title"></h4>
+        <div class="modal fade" id="design" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mod-inputs">
+                            <form name="headform" method="POST" action="mail.php">
+                                <div class="input-group form-templ name_ico">
+                                    <input type="text" name="part" class="form-control input-templ_name" placeholder="Деталь">
+                                </div>
+                                <div class="input-group form-templ name_ico">
+                                    <input type="text" name="marka" class="form-control input-templ_name" placeholder="Марка">
+                                </div>
+                                <div class="input-group form-templ name_ico">
+                                    <input type="text" name="vin" class="form-control input-templ_name" placeholder="ВИН">
+                                </div>
+                                <div class="input-group  form-templ tel_ico">
+                                    <input type="text" name="phone" class="form-control input-templ_tel" placeholder="Телефон" required>
+                                </div>
+                                <!--<div class="input-group form-templ">
+                                  <input type="email" name="email" class="form-control modin-templ-email" placeholder="E-mail" required>
+                                </div>-->
+                                <input type="submit" value="Отправить" class="btn btn-template-modal btn-lg"><span class="network-name"></span>
+                            </form>
+
                         </div>
-                        <div class="modal-body">
-                            <div class="mod-inputs">
-                                <form name="headform" method="POST" action="mail.php">
-                                    <div class="input-group form-templ name_ico">
-                                        <input type="text" name="part" class="form-control input-templ_name" placeholder="Деталь">
-                                    </div>
-                                    <div class="input-group form-templ name_ico">
-                                        <input type="text" name="marka" class="form-control input-templ_name" placeholder="Марка">
-                                    </div>
-                                    <div class="input-group form-templ name_ico">
-                                        <input type="text" name="vin" class="form-control input-templ_name" placeholder="ВИН">
-                                    </div>
-                                    <div class="input-group  form-templ tel_ico">
-                                        <input type="text" name="phone" class="form-control input-templ_tel" placeholder="Телефон" required>
-                                    </div>
-                                    <!--<div class="input-group form-templ">
-                                      <input type="email" name="email" class="form-control modin-templ-email" placeholder="E-mail" required>
-                                    </div>-->
-                                    <input type="submit" value="Отправить" class="btn btn-template-modal btn-lg"><span class="network-name"></span>
-                                </form>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
 
-                            </div>
-                        </div>
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-            </div><!-- /.modal -->
-
-            <!-- /modal form -->
-        </div>
-        <!-- JavaScript -->
-        <script src="js/jquery-1.10.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.countdown.js"></script>
-        <script src="js/jquery.scrollTo.min.js"></script>
-        <script src="js/script.js"></script>
+        <!-- /modal form -->
+    </div>
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/script.js"></script>
 
 
-        <!--<script  type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>-->
+    <!--<script  type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>-->
 
-    </body>
+</body>
 </html>

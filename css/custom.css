@@ -50,11 +50,11 @@ h5 {
     padding: 0;
 }
 #menu.affix .contactphone {  
-    color: #f9bf4b;
+    color: #f88417;
     margin-top: 5px;
     display: block;
 }        
-#menu.affix .btn-top-call {
+#menu.affix .btn-custom {
     display:none;
 }
 #menu .links{
@@ -178,7 +178,7 @@ h5 {
 .white-title {
     font-size: 36px;
     font-family: Jura;
-    color: #fff;
+    color: #f3f6fd;
     font-weight: 600;
     text-transform: uppercase;
     padding: 0 0 30px 0;
@@ -312,7 +312,7 @@ h5 {
     font-family: Roboto;
     font-size: 18px;
     font-weight: 100;
-    color: #fff;
+    color: #f3f6fd;
 }
 .comment-block {
     display: inline-table;
@@ -339,7 +339,7 @@ h5 {
     padding: 50px 0;
 }
 .bottom-text {
-    color: #FFFFFF;
+    color: #f3f6fd;
     font-size: 26px;
     font-weight: 600;
 }
@@ -444,82 +444,6 @@ footer img {
 .tfont {
     color: #B07150;
     font-family: Segoe UI;
-}
-.btn-template-bluu {
-    background: linear-gradient(to top, #289cd8, #35b2f3) repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: 1px solid #75ccf9;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 35px;
-    box-shadow: 0px 2px #333;
-}
-.btn-template-bluu:hover {
-    background: linear-gradient(to top, #35b2f3, #289cd8) repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: medium none #FFC305;
-    color: #fff;
-}
-.btn-template-blu {
-    background: linear-gradient(to top, #289cd8, #35b2f3) repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: 1px solid #75ccf9;
-    color: #fff;
-    font-size: 180%;
-    padding: 10px 35px;
-    box-shadow: 0px 2px #333;
-}
-.btn-template-blu:hover {
-    background: linear-gradient(to top, #35b2f3, #289cd8) repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: medium none #FFC305;
-    color: #fff;
-}
-.btn-template-red {
-    background: linear-gradient(to top, #D32C2E, #F1484A) repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: 1px solid #912517;
-    box-shadow: 0 2px #333333;
-    color: #FFFFFF;
-    font-size: 26px;
-    padding: 8px 110px;
-    margin-left: 0px;
-}
-.btn-template-red:hover {
-    background: linear-gradient(to top, #f1484a, #d32c2e) repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: medium none #FFC305;
-    color: #fff;
-}
-.btn-template-order {
-    background: linear-gradient(to top, #289cd8, #35b2f3) repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: 1px solid #75ccf9;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 35px;
-    box-shadow: 0px 2px #333;
-}
-.btn-template-order:hover {
-    background: linear-gradient(to top, #35b2f3, #289cd8) repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: medium none #75ccf9;
-    color: #fff;
-}
-.btn-template-order-red {
-    background: linear-gradient(to top, #d32c2e, #f1484a) repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: 1px solid #912517;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 35px;
-    box-shadow: 0px 2px #333;
-}
-.btn-template-order-red:hover {
-    background: linear-gradient(to top, #f1484a, #d32c2e) repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: medium none #912517;
-    color: #fff;
-}
-.btn-template-modal {
-    background: url(../img/modal_btn.png) no-repeat;
-    color: #FFFFFF;
-    font-size: 20px;
-    margin-left: 10px;
-    padding: 4px 38px;
-}
-.btn-template-modal:hover {
-    #    background: background: url(../img/modal_btnh.png) no-repeat;;
 }
 .titleb {
     font-family: Segoe UI;
@@ -643,7 +567,7 @@ footer img {
     outline: 0 none;
 }
 .form-control:-moz-placeholder {
-    color: #fff;
+    color: #f3f6fd;
     opacity: 1;
     text-shadow: 1px 1px #000;
     font-family: Roboto;
@@ -651,7 +575,7 @@ footer img {
     font-size: 17px;
 }
 .form-control::-moz-placeholder {
-    color: #fff;
+    color: #f3f6fd;
     opacity: 1;
     text-shadow: 1px 1px #000;
     font-family: Roboto;
@@ -697,7 +621,7 @@ footer img {
     font-size: 1.4em;
 }
 .agreea a {
-    color: #FFFFFF;
+    color: #f3f6fd;
     cursor: pointer;
     font-size: 1.3em;
 }
@@ -922,7 +846,7 @@ footer img {
 .modal-form-templ {
 }
 .mhead-form-text {
-    color: #fff;
+    color: #f3f6fd;
     font-size: 18px;
     padding: 0 100px 15px 0px;
     position: relative;
@@ -935,6 +859,7 @@ footer img {
     padding: 95px 0 0 0;
     opacity: 0.3;
     position: fixed;
+    left: 0;
 }
 
 .carousel-comment-caption {
@@ -1001,7 +926,7 @@ footer img {
     margin-right: 26px;
 }
 .comment-text {
-    color: #fff;
+    color: #f3f6fd;
     position: relative;
     text-shadow: none;
     text-align: left;
@@ -1086,4 +1011,31 @@ video {
     overflow: hidden;
     background: url(../video/poster.jpg) no-repeat;
     background-size: cover; 
+}
+
+.btn-custom {
+    background-color: #f88417 !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffcb54", endColorstr="#f88417");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffcb54), to(#f88417));
+    background-image: -moz-linear-gradient(top, #ffcb54, #f88417);
+    background-image: -ms-linear-gradient(top, #ffcb54, #f88417);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffcb54), color-stop(100%, #f88417));
+    background-image: -webkit-linear-gradient(top, #ffcb54, #f88417);
+    background-image: -o-linear-gradient(top, #ffcb54, #f88417);
+    background-image: linear-gradient(#ffcb54, #f88417);
+    border-color: #f48b28 #f48b28 hsl(29, 91%, 50.5%);
+    color: #f3f6fd !important;
+    font-family: Open Sans;
+    font-size: 19px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    -webkit-font-smoothing: antialiased;
+}
+.btn-custom:hover{
+    background-position: 0 -15px;
+}
+
+.bottom-text .glyphicon {
+    color: #F88417;
 }

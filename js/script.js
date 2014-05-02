@@ -12,6 +12,8 @@ $(document).ready(function() {
         return false;
     });
 
+    $(".phone").mask("+7 (999) 999-9999", {placeholder: " "});
+
     var note = $('#note');
     ts = new Date();
     ts.setHours(ts.getHours() + 22);

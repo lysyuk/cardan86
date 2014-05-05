@@ -1,72 +1,15 @@
-
-.countdownHolder {
-    font-family: PT Sans Condensed;
-    font-size: 80px;
-    letter-spacing: -10px;
-    margin: auto;
-    text-align: center;
-    width: 600px;
+.cntSeparator {
+    font-size: 54px;
+    margin: 10px 7px;
+    color: #000;
 }
-.position {
-    display: inline-block;
-    height: 150px;
-    overflow: hidden;
-    position: relative;
-    width: 86px;
-    margin-right: -8px;
-}
-.digit {
-    color: #289CD8;
-    display: block;
-    letter-spacing: -1px;
-    position: absolute;
-    text-align: center;
-    width: 41px;
-}
-.digit.static {
-    background: url("../img/dig_bg.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-    height: 112px;
-    width: 78px;
-}
-.countDays {
-    display: none;
-}
-.countDiv0 {
-    display: none !important;
-}
-.countHours {
-}
-.countDiv1 {
-    background: url(../img/dig_divider.png) no-repeat;
-    padding: 0 15px;
-}
-.countMinutes {
-}
-.countDiv2 {
-    background: url(../img/dig_divider.png) no-repeat;
-    padding: 0 15px;
-}
-.countSeconds {
-}
-.countDiv {
-    display: inline-block;
-    height: 1.6em;
-    position: relative;
-    width: 8px;
-}
-.countDiv:before, .countDiv:after {
-    background-color: #444444;
-    border-radius: 50%;
-    box-shadow: 1px 1px 1px rgba(4, 4, 4, 0.5);
-    content: "";
-    display: none;
-    height: 5px;
-    left: 50%;
-    margin-left: -3px;
-    position: absolute;
-    top: 0.5em;
-    width: 5px;
-}
-.countDiv:after {
-    top: 0.9em;
+.desc { margin: 7px 3px; }
+.desc div {
+    float: left;
+    font-family: Arial;
+    width: 70px;
+    margin-right: 65px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
 }

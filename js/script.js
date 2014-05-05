@@ -34,5 +34,12 @@ $(document).ready(function() {
         var partName = $(this).attr("data-xxx");
         $("#part").val(partName);
     });
+    $('.btn-np').click(function() {
+        var label = $(this).attr("data-label");
+        var button = $(this).attr("data-button");
+        $("#NPLabel").html(label);
+        $("#NPButton").html(button);
+        $("#NPWhichButton").val(label);
+    });
 
 });

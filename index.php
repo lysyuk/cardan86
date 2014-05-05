@@ -19,19 +19,21 @@
         <!-- Add custom CSS here -->        
         <link href="css/custom.css" rel="stylesheet">
         <link href="css/jquery.countdown.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="feedback/css/jquery.arcticmodal.css">
 
     </head>
 
     <body>
-        <!-- ============================== Модальное окно Заказать звонок ========================== -->
-        <div class="modal fade" id="orderCall" tabindex="-1" role="dialog" aria-labelledby="orderCallLabel" aria-hidden="true">
+        <!-- ============================== Модальное окно NP (Имя, Телефон) ========================== -->
+        <div class="modal fade" id="NP" tabindex="-1" role="dialog" aria-labelledby="NPLabel" aria-hidden="true">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content">
                     <form action="" class="form-horizontal" role="form"
-                          autocomplete="off" name="orderCall">
+                          autocomplete="off" name="NP">
+                        <input type="hidden" id="NPWhichButton" name="NPWhichButton" value="">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title" id="orderCallLabel">Заказ звонка</h4>
+                            <button type="button" class="close white" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="NPLabel">Заказ звонка</h4>
                         </div>
                         <div class="modal-body">
                             <div class="form-group">
@@ -46,7 +48,7 @@
                                     <label for="phone" class="glyphicon glyphicon-phone" rel="tooltip" title="Телефон"></label>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-custom center-block feedback" name="send">Заказать звонок</button>
+                            <button type="button" id="NPButton" class="btn btn-custom center-block feedback" name="send">Заказать звонок</button>
                             <div class="row" id="security">
                                 <div class="col-xs-3">
                                     <span class="glyphicon glyphicon-lock"></span>
@@ -61,127 +63,7 @@
                 </div>
             </div>
         </div>
-        <!-- ============================== Модальное окно Заказать звонок ========================== -->
-
-        <!-- ============================== Модальное окно Узнать больше про контрактные двигатели ========================== -->
-        <div class="modal fade" id="getAdvice" tabindex="-1" role="dialog" aria-labelledby="getAdviceLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <form action="" class="form-horizontal" role="form"
-                          autocomplete="off"  name="getAdvice" >
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title" id="getAdviceLabel">Контрактные двигатели</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <div class="icon-addon addon-md">
-                                    <input type="text" class="form-control" name="name" placeholder="Введите имя">
-                                    <label for="name" class="glyphicon glyphicon-user" rel="tooltip" title="Имя"></label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="icon-addon addon-md">
-                                    <input type="text" class="form-control phone" name="phone" placeholder="Введите телефон">
-                                    <label for="phone" class="glyphicon glyphicon-phone" rel="tooltip" title="Телефон"></label>
-                                </div>
-                            </div>
-                            <button type="button" class="btn btn-custom center-block feedback" name="send">Узнать больше</button>
-                            <div class="row" id="security">
-                                <div class="col-xs-3">
-                                    <span class="glyphicon glyphicon-lock"></span>
-                                </div>
-                                <div class="col-xs-9">
-                                    <p>Ваши контактные данные в безопасности
-                                        и не будут переданы третьим лицам</p>
-                                </div>
-                            </div>							
-                        </div>						
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- ============================== Модальное окно Узнать больше про контрактные двигатели ========================== -->
-
-        <!-- ============================== Модальное окно Получить скидку на ТО ========================== -->
-        <div class="modal fade" id="getDiscount" tabindex="-1" role="dialog" aria-labelledby="getDiscountLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <form action="" class="form-horizontal" role="form"
-                          autocomplete="off"  name="getDiscount" >
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title" id="getDiscountLabel">Хочу скидку на ТО</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <div class="icon-addon addon-md">
-                                    <input type="text" class="form-control" name="name" placeholder="Введите имя">
-                                    <label for="name" class="glyphicon glyphicon-user" rel="tooltip" title="Имя"></label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="icon-addon addon-md">
-                                    <input type="text" class="form-control phone" name="phone" placeholder="Введите телефон">
-                                    <label for="phone" class="glyphicon glyphicon-phone" rel="tooltip" title="Телефон"></label>
-                                </div>
-                            </div>
-                            <button type="button" class="btn btn-custom center-block feedback" name="send">Получить!</button>
-                            <div class="row" id="security">
-                                <div class="col-xs-3">
-                                    <span class="glyphicon glyphicon-lock"></span>
-                                </div>
-                                <div class="col-xs-9">
-                                    <p>Ваши контактные данные в безопасности
-                                        и не будут переданы третьим лицам</p>
-                                </div>
-                            </div>							
-                        </div>						
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- ============================== Модальное окно Получить скидку на ТО ========================== -->
-
-        <!-- ============================== Модальное окно Задать вопрос ========================== -->
-        <div class="modal fade" id="getQuestion" tabindex="-1" role="dialog" aria-labelledby="getQuestionLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <form action="" class="form-horizontal" role="form"
-                          autocomplete="off"  name="getQuestion" >
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title" id="getQuestionLabel">Остались вопросы?</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <div class="icon-addon addon-md">
-                                    <input type="text" class="form-control" name="name" placeholder="Введите имя">
-                                    <label for="name" class="glyphicon glyphicon-user" rel="tooltip" title="Имя"></label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="icon-addon addon-md">
-                                    <input type="text" class="form-control phone" name="phone" placeholder="Введите телефон">
-                                    <label for="phone" class="glyphicon glyphicon-phone" rel="tooltip" title="Телефон"></label>
-                                </div>
-                            </div>
-                            <button type="button" class="btn btn-custom center-block feedback" name="send">Задать!</button>
-                            <div class="row" id="security">
-                                <div class="col-xs-3">
-                                    <span class="glyphicon glyphicon-lock"></span>
-                                </div>
-                                <div class="col-xs-9">
-                                    <p>Ваши контактные данные в безопасности
-                                        и не будут переданы третьим лицам</p>
-                                </div>
-                            </div>							
-                        </div>						
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- ============================== Модальное окно Задать вопрос ========================== -->
+        <!-- ============================== Модальное окно NP (Имя, Телефон) ========================== -->
 
         <!-- ============================== Модальное окно Узнать цены на запчасти ========================== -->
         <div class="modal fade" id="getPriceList" tabindex="-1" role="dialog" aria-labelledby="getPriceListLabel" aria-hidden="true">
@@ -247,7 +129,11 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <span class="contactphone">8 (982) 411-29-89</span>
-                    <button data-target="#orderCall" data-toggle="modal" class="btn btn-sm btn-custom">Заказать звонок</button>
+                    <button data-target="#NP" 
+                            data-toggle="modal" 
+                            data-label="Заказ звонка" 
+                            data-button="Заказать звонок"
+                            class="btn btn-sm btn-custom btn-np">Заказать звонок</button>
                 </div>
 
             </div><!-- /row -->
@@ -294,16 +180,7 @@
                                             <label for="phone" class="glyphicon glyphicon-phone" rel="tooltip" title="Телефон"></label>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-custom btn-sm center-block feedback" name="send">Узнать цены</button>
-                                    <!--<div class="row" id="security">
-                                        <div class="col-xs-3">
-                                            <span class="glyphicon glyphicon-lock"></span>
-                                        </div>
-                                        <div class="col-xs-9">
-                                            <p>Ваши контактные данные в безопасности
-                                                и не будут переданы третьим лицам</p>
-                                        </div>
-                                    </div>-->		
+                                    <button type="button" class="btn btn-custom btn-sm center-block feedback" name="send">Узнать цены</button>                                   	
                                 </form>
                             </div>
                         </div>  
@@ -442,7 +319,10 @@
             </div>
 
             <div class="col-md-12 text-center top-50">
-                <button data-toggle="modal" data-target="#getAdvice" class="btn btn-lg btn-custom">Узнать больше</button>                   
+                <button data-toggle="modal" data-target="#NP"
+                        data-label="Контрактные двигатели" 
+                        data-button="Узнать больше"
+                        class="btn btn-lg btn-custom btn-np">Узнать больше</button>                   
             </div>
 
         </div><!-- /.container -->
@@ -584,7 +464,11 @@
                         </div>-->
                     </div>    
                     <div class="col-md-10 col-md-offset-1">
-                        <button data-target="#getDiscount" data-toggle="modal" class="btn btn-lg btn-custom">Получить скидку на ТО</button>
+                        <button data-toggle="modal" 
+                                data-target="#NP"
+                                data-label="Скидка на ТО" 
+                                data-button="Получить"
+                                class="btn btn-lg btn-custom btn-np">Получить скидку на ТО</button>
                     </div>
                 </div>
             </div>
@@ -772,7 +656,6 @@
     <!-- ================================ КОНТАКТЫ =========================== -->
 
     <div class="section-contact">
-
         <div class="container">
             <div class="col-md-12 text-center white-title">
                 НАШ АДРЕС
@@ -791,49 +674,16 @@
             <div class="row bottom-line">
                 <div class="col-md-4 bottom-text">...остались вопросы?</div>
                 <div class="col-md-4 text-center">
-                    <button type="button" data-target="#getQuestion" data-toggle="modal" class="btn btn-lg btn-custom">Задать вопрос</button>
+                    <button type="button" data-toggle="modal"
+                            data-target="#NP"
+                            data-label="Остались вопросы?" 
+                            data-button="Задать"
+                            class="btn btn-lg btn-custom btn-np">Задать вопрос</button>
                 </div>                    
             </div>
-
         </div><!-- /.container -->
     </div><!-- /.content-section-a -->
     <!-- ================================ КОНТАКТЫ =========================== -->
-
-    <!-- modal form -->        
-    <div class="modal fade" id="design" tabindex="-1" role="dialog" aria-labelledby="designLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"></h4>
-                </div>
-                <div class="modal-body">
-                    <div class="mod-inputs">
-                        <form name="headform" method="POST" action="mail.php">
-                            <div class="input-group form-templ name_ico">
-                                <input type="text" name="part" class="form-control input-templ_name" placeholder="Деталь">
-                            </div>
-                            <div class="input-group form-templ name_ico">
-                                <input type="text" name="marka" class="form-control input-templ_name" placeholder="Марка">
-                            </div>
-                            <div class="input-group form-templ name_ico">
-                                <input type="text" name="vin" class="form-control input-templ_name" placeholder="ВИН">
-                            </div>
-                            <div class="input-group  form-templ tel_ico">
-                                <input type="text" name="phone" class="form-control input-templ_tel" placeholder="Телефон" required>
-                            </div>
-                            <!--<div class="input-group form-templ">
-                              <input type="email" name="email" class="form-control modin-templ-email" placeholder="E-mail" required>
-                            </div>-->
-                            <input type="submit" value="Отправить" class="btn btn-custom btn-sm center-block">
-                        </form>
-
-                    </div>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-    <!-- /modal form -->
 
     <!-- JavaScript -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -842,10 +692,8 @@
     <script src="js/jquery.countdown.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="feedback/js/feedback.js"></script>
+	<script src="feedback/js/jquery.arcticmodal.js"></script>
     <script src="js/script.js"></script>
-
-
-    <!--<script  type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>-->
-
 </body>
 </html>

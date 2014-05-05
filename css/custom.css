@@ -602,9 +602,9 @@ footer img {
     border: medium none;
 }
 .close {
-    color: white;
+    color: black;
 }
-.close:hover, .close:focus {
+.white{
     color: white;
 }
 .agree {

@@ -1,3 +1,10 @@
+<?php
+/*
+ * 
+ * Version 0.1.0 
+ * 
+ */
+?>
 <!DOCTYPE html>
 <html lang="ru">
     <head>

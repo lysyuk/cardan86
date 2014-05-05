@@ -6,14 +6,19 @@
  */
 ?>
 <!DOCTYPE html>
-<html lang="ru">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="Jinn">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>CAR-DAN86</title>
+        <meta name="description" content="">
+        <meta name="author" content="Юрий">
+
+        <title>Автомагазин запчастей на иномарки в Сургуте - CAR-DAN86</title>
 
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -27,10 +32,13 @@
         <link href="css/custom.css" rel="stylesheet">
         <link href="css/jquery.countdown.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="feedback/css/jquery.arcticmodal.css">
-
+		<script src="js/modernizr-2.6.2.min.js"></script>
     </head>
 
     <body>
+		<!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
         <!-- ============================== Модальное окно NP (Имя, Телефон) ========================== -->
         <div class="modal fade" id="NP" tabindex="-1" role="dialog" aria-labelledby="NPLabel" aria-hidden="true">
             <div class="modal-dialog modal-sm">
@@ -693,8 +701,8 @@
     <!-- ================================ КОНТАКТЫ =========================== -->
 
     <!-- JavaScript -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="js/jquery.countdown.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>

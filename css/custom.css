@@ -406,7 +406,7 @@ h5 {
 }
 footer {
     //background-color: #899ba3;
-    
+
     padding: 14px 0;
 }
 footer p {
@@ -1101,4 +1101,20 @@ video.fillWidth {
 .form-horizontal {
     width: 240px;
     margin-left: 10px;
+}
+.browsehappy {       
+    width: 40%
+    border: 1px solid #000;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);    
+    padding: 19px;    
+    position: relative;
+    text-align: center;
+    color: #F9BF46;
+    font-family: Jura;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.75);
+    
 }

@@ -1,7 +1,7 @@
 <?php
 /*
  * 
- * Version 0.1.0 
+ * Version 0.1.1 
  * 
  */
 ?>
@@ -162,7 +162,7 @@
                             <!--<img src="img/top_form_bg.png">-->
                             <div class="top-form-inputs">
                                 <h3 class="text-center form_title">Подать заявку</h3>
-                                <form role="form" method="get" name="getPrice">	
+                                <form action="" role="form" name="getPrice">	
                                     <div class="form-group">
                                         <div class="icon-addon addon-md">
                                             <input type="text" class="form-control" name="part" placeholder="Деталь">

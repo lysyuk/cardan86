@@ -30,5 +30,9 @@ $(document).ready(function() {
         startTime: '01:12:12:00'
     });
 
+    $('.getPriceButton').click(function() {
+        var partName = $(this).attr("data-xxx");
+        $("#part").val(partName);
+    });
 
 });

@@ -14,6 +14,10 @@ h5 {
 }
 .form-control {
     color: #333;
+    border: 1px solid #000;
+    -webkit-box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.75);
 }
 #menu {
     background: url(../img/black_texture_bg.jpg);
@@ -251,18 +255,22 @@ h5 {
     font-size: 18px;
 }
 .part-block {
-    background: url(../img/block_bg01.jpg) no-repeat;
+    background: #fff;
     border: 3px solid #848385;
     background-size: 100%;
     padding: 18px;
     border-radius: 5px;
     text-align: center;
 }
+.part-block p {
+    font-size: 15px;
+    font-weight: 600;
+}
 .category-block {
     padding: 20px 0;
 }
 .car-part {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .btn-sknow {
     background: url(../img/know_sbtn.png) no-repeat center center;
@@ -311,7 +319,7 @@ h5 {
 .comment-text {
     font-family: Roboto;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     color: #f3f6fd;
 }
 .comment-block {
@@ -323,13 +331,13 @@ h5 {
     vertical-align: middle;
 }
 .section-crew {
-    background: url("../img/white_grey_bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: #f3f6fd;
     padding: 50px 0;
 }
 .crew-text {
     font-family: Roboto;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     color: #000;
 }
 .section-comments {
@@ -397,7 +405,8 @@ h5 {
     }
 }
 footer {
-    background-color: #899ba3;
+    //background-color: #899ba3;
+    
     padding: 14px 0;
 }
 footer p {
@@ -491,18 +500,19 @@ footer img {
 .revtxt {
     font-size: 1.3em;
 }
-.head-form {
-    color: #444444;
+.head-form {    
     float: right;
     margin-top: 60px;
     text-align: left;
-    width: 375px;
+    width: 375px;    
 }
-.form_title {
-    font-size: 23px;
-    margin-left: 10px;
-    color: white;
-    padding-top: 90px;
+.form_title {    
+    font: 28px 'Jura',sans-serif;
+    color: #f3f3f3;
+    font-weight: 500;
+    outline: 0 none;
+    text-shadow: 0px 0px 13px #7BC1FF;
+
 }
 .head-form p {
     font-size: 1.3em;
@@ -588,6 +598,7 @@ footer img {
     margin-left: 9px;
 }
 .modal-header {
+    padding: 25px 15px 15px 15px;
     border: medium none;
 }
 .close {
@@ -736,9 +747,8 @@ footer img {
 }
 .modal-content {
     background: url("../img/top_form_bg.png") no-repeat scroll center top rgba(0, 0, 0, 0);
-    width: 242px;
+    width: 260px;
     height: 334px;
-    background-position: -10px 0px;
 }
 .modal-content {   
     height: auto;    
@@ -752,67 +762,15 @@ footer img {
 .space_top_40 {
     margin-top: 40px;
 }
-.btn-top-call {
-    background: url("../img/top_call_btn.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-    padding: 30px 100px;
-    position: relative;
-    z-index: 9;
-}
-
-.btn-top-form {
-    background: url("../img/know_sbtn.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-    padding: 35px 150px;
-    position: relative;
-    left: -45px;
-}
-.btn-top-form:hover {
-    #    background: url("../img/know_sbtnh.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-}
-.btn-know-big {
-    background: url("../img/know_btn.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-    padding: 50px 250px;
-}
-.btn-know-big:hover {
-    #    background: url("../img/know_btnh.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-}
-.btn-know-price {
-    background: url("../img/know_price_btn.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-    padding: 25px 90px;
-}
-.btn-know-price:hover {
-    #    background: url("../img/know_price_btnh.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-}
-.btn-discount {
-    background: url("../img/to_btn.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-    padding: 55px 190px;
-}
-.btn-discount:hover {
-    #    background: url("../img/to_btnh.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-}
-.btn-comments {
-    background: url("../img/comment_btn.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-    padding: 55px 190px;
-}
-.btn-comments:hover {
-    #    background: url("../img/comment_btnh.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-}
-
 .top-form-bg {
     background: url(../img/top_form_bg.png) no-repeat top;
-    padding: 45px 0;
+    padding: 0px 0 70px;
+    margin-right: 20px;
 }
 .top-form-inputs {
     #border: 1px solid #fff;
     width: 210px;
-    margin: 35px 0 0 67px;
-}
-
-.input-templ_name {
-    #background-image: url("../img/input_bg.jpg") !important;
-    #border: 1px solid #999999;
-    #height: 40px;
-    #width: 208px !important;
-    #border-radius: 5px !important;
+    margin: 25px 0 0 84px;
 }
 .input-group .form-control {
     background: url("../img/input_form_bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
@@ -917,6 +875,9 @@ footer img {
     position: relative;
     text-shadow: none;
     text-align: left;
+    padding: 35px;
+}
+.comment-img {    
     padding: 35px;
 }
 .carousel-caption {
@@ -1040,7 +1001,10 @@ video.fillWidth {
 }
 .modal-dialog h4 {
     font: 28px 'Jura',sans-serif;
-    color: #F88417;
+    color: #f3f3f3;
+    font-weight: 500;
+    outline: 0 none;
+    text-shadow: 0px 0px 13px #7BC1FF;
 }
 #security{
     margin-top:20px;
@@ -1133,4 +1097,8 @@ video.fillWidth {
 .icon-addon .form-control:focus + .fa,
 .icon-addon:hover .fa {
     color: #2580db;
+}
+.form-horizontal {
+    width: 240px;
+    margin-left: 10px;
 }

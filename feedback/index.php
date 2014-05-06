@@ -345,7 +345,8 @@ if (isset($form[$act]))
 		}
 
 		//отправка письма
-		$mail = mail($To, $sb['subject'], $sb['body'], $headers);
+		//$mail = mail($To, $sb['subject'], $sb['body'], $headers);
+		$mail = mail('info@cardan86.ru', 'тема письма', 'тело письма', 'From: info@cardan86.ru');
 
 		if ($mail)
 		{

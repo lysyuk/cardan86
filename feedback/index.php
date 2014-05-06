@@ -323,21 +323,21 @@ if (isset($form[$act]))
 			}
 		}
 		// или отдаем голый текст
-		if (mb_strlen(trim($sb['body'])) < 10)
+		//if (mb_strlen(trim($sb['body'])) < 10)
+		//{
+		if (isset($form['cfg']['title']))
+			$sb['body'] .= $form['cfg']['title']."\r\n\r\n";
+		foreach ($getdata as $name => $data)
 		{
-			if (isset($form['cfg']['title']))
-				$sb['body'] .= $form['cfg']['title']."\r\n\r\n";
-			foreach ($getdata as $name => $data)
-			{
-				$sb['body'] .= $data['title'].": ".$data['value']."\r\n";
-			}
-			if ($form['cfg']['referer'])
-			{
-				$sb['body'] .= "\r\n\r\n";
-				$sb['body'] .= "Поисковик: ".$refererInfo[0]."\r\n";
-				$sb['body'] .= "Ключевое слово: ".$refererInfo[1]."\r\n";
-			}
+			$sb['body'] .= $data['title'].": ".$data['value']."\r\n";
 		}
+		if ($form['cfg']['referer'])
+		{
+			$sb['body'] .= "\r\n\r\n";
+			$sb['body'] .= "Поисковик: ".$refererInfo[0]."\r\n";
+			$sb['body'] .= "Ключевое слово: ".$refererInfo[1]."\r\n";
+		}
+		//}
 		// если есть что добавить
 		if (isset($form['cfg']['adds']) && is_array($form['cfg']['adds']))
 		{

@@ -1,7 +1,7 @@
 <?php
 /*
  * 
- * Version 0.3.1 
+ * Version 0.4.0 
  * 
  */
 ?>
@@ -254,55 +254,39 @@
 		<div class="section-mark">
 
 			<div class="container">
-				<div class="col-md-12 text-center grey-title">
-					НА КАКИЕ МАРКИ АВТОМОБИЛЕЙ МЫ ПОДБИРАЕМ ЗАПЧАСТИ
-				</div>
-
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 logo-block">
-
-						<div id="comments" class="carousel-comment slide">
-							<!-- белые кружочки -->
-							<ol class="carousel-indicators">
-								<li data-target="#comments" data-slide-to="0" class="active"></li>
-								<li data-target="#comments" data-slide-to="1"></li>
-								<!--<li data-target="#comments" data-slide-to="2"></li>-->
-							</ol>
-
-							<!-- слайды -->
-							<div class="carousel-comment-inner">
-								<div class="item active">
-									<div class="comment-fill">
-										<img class="comment_face" src="img/car_logo01.png">
-										<img class="comment_face" src="img/car_logo02.png">
-										<img class="comment_face" src="img/car_logo03.png">
-										<img class="comment_face" src="img/car_logo04.png">
-										<img class="comment_face" src="img/car_logo05.png">
-									</div>
-									<div class="carousel-comment-caption">
-									</div>
-								</div>
-								<div class="item">
-									<div class="comment-fill">
-										<img class="comment_face" src="img/car_logo06.png">
-										<img class="comment_face" src="img/car_logo07.png">
-										<img class="comment_face" src="img/car_logo08.png">
-										<img class="comment_face" src="img/car_logo09.png">
-										<img class="comment_face" src="img/car_logo10.png">
-									</div>
-									<div class="carousel-comment-caption">
-									</div>
-								</div>
-							</div>
-
-							<!-- управление -->
-							<a class="left carousel-control icon-prev-comment" href="#comments" data-slide="prev">
-								<!--<span class="icon-prev"></span>-->
-							</a>
-							<a class="right carousel-control icon-next-comment" href="#comments" data-slide="next">
-								<!--<span class="icon-next"></span>-->
-							</a>
-						</div>
+					<div class="col-md-12 text-center grey-title">
+						НА КАКИЕ МАРКИ АВТОМОБИЛЕЙ МЫ ПОДБИРАЕМ ЗАПЧАСТИ
+					</div>
+				</div> 
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 logo1-block ">
+						<ul id="flexiselDemo1"> 
+							<li class="nbs-flexisel-item"><img  src="img/volvo.jpg"></li>
+							<li class="nbs-flexisel-item"><img  src="img/suzuki.jpg"></li>
+							<li class="nbs-flexisel-item"><img  src="img/skoda.jpg"></li>
+							<li class="nbs-flexisel-item"><img  src="img/mazda.jpg"></li>
+							<li class="nbs-flexisel-item"><img  src="img/fiat.jpg"></li>							
+							<li class="nbs-flexisel-item"><img  src="img/alfa-romeo.jpg"></li>
+							<li class="nbs-flexisel-item"><img  src="img/Toyota.png"></li>
+							<li class="nbs-flexisel-item"><img  src="img/Nissan.png"></li>
+							<li class="nbs-flexisel-item"><img  src="img/Mitsubishi.png"></li>
+							<li class="nbs-flexisel-item"><img  src="img/Kia.png"></li>								
+							<li class="nbs-flexisel-item"><img  src="img/infiniti.jpg"></li>
+							<li class="nbs-flexisel-item"><img  src="img/hyundai.jpg"></li>
+							<li class="nbs-flexisel-item"><img  src="img/honda.jpg"></li>
+							<li class="nbs-flexisel-item"><img  src="img/GrealWall.jpg"></li>
+							<li class="nbs-flexisel-item"><img  src="img/Ford.jpg"></li>								
+							<li class="nbs-flexisel-item"><img  src="img/Chery.jpg"></li>
+							<li class="nbs-flexisel-item"><img  src="img/audi.jpg"></li>
+							<li class="nbs-flexisel-item"><img  src="img/acura.jpg"></li>
+							<li class="nbs-flexisel-item"><img  src="img/lexus.jpg"></li>
+							<li class="nbs-flexisel-item"><img  src="img/citroen.jpg"></li>								
+							<li class="nbs-flexisel-item"><img  src="img/volkswagen.jpg"></li>
+							<li class="nbs-flexisel-item"><img  src="img/mercedes.jpg"></li>
+							<li class="nbs-flexisel-item"><img  src="img/opel.jpg"></li>
+							<li class="nbs-flexisel-item"><img  src="img/bmw.jpg"></li>						
+						</ul>
 					</div>
 				</div>
 
@@ -315,7 +299,7 @@
 		<div id="link1" class="section-engine-kpp">
 			<div class="container">
 				<div class="col-md-12 text-center blue-title">
-					КОНТАКТНЫЕ ДВИГАТЕЛИ И КПП
+					КОНТРАКТНЫЕ ДВИГАТЕЛИ И КПП
 				</div>
 				<div class="row">
 					<div class="col-md-6 engine-text top-50">
@@ -715,6 +699,34 @@
 		<script src="js/jquery.maskedinput.min.js"></script>
 		<script type="text/javascript" src="feedback/js/feedback.js"></script>
 		<script src="feedback/js/jquery.arcticmodal.js"></script>
+		<script src="js/jquery.flexisel.js"></script>
 		<script src="js/script.js"></script>
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+		(function (d, w, c) {
+			(w[c] = w[c] || []).push(function() {
+				try {
+					w.yaCounter24895019 = new Ya.Metrika({id:24895019,
+							webvisor:true,
+							clickmap:true,
+							trackLinks:true,
+							accurateTrackBounce:true});
+				} catch(e) { }
+			});
+
+			var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function () { n.parentNode.insertBefore(s, n); };
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else { f(); }
+		})(document, window, "yandex_metrika_callbacks");
+		</script>
+		<noscript><div><img src="//mc.yandex.ru/watch/24895019" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
 	</body>
 </html>

@@ -40,7 +40,7 @@ $form['NP'] = array(
 		'from_email' => 'info@cardan86.ru',
 		'from_name'	 => 'cardan86.ru',
 		'to_email'	 => 'info@cardan86.ru, trash@lgroup.biz',
-		'to_name'	 => 'cardan86.ru, cardan86.ru',
+		'to_name'	 => 'cardan86.ru, Liberty Group',
 		'geoip'		 => true,
 		'referer'	 => true,
 		'type'		 => 'plain',
@@ -86,7 +86,7 @@ $form['getPrice'] = array(
 		'from_email' => 'info@cardan86.ru',
 		'from_name'	 => 'cardan86.ru',
 		'to_email'	 => 'info@cardan86.ru, trash@lgroup.biz',
-		'to_name'	 => 'cardan86.ru, cardan86.ru',
+		'to_name'	 => 'cardan86.ru, Liberty Group',
 		'geoip'		 => true,
 		'referer'	 => true,
 		'type'		 => 'plain',
@@ -132,7 +132,7 @@ $form['getPriceList'] = array(
 		'from_email' => 'info@cardan86.ru',
 		'from_name'	 => 'cardan86.ru',
 		'to_email'	 => 'info@cardan86.ru, trash@lgroup.biz',
-		'to_name'	 => 'cardan86.ru, cardan86.ru',
+		'to_name'	 => 'cardan86.ru, Liberty Group',
 		'geoip'		 => true,
 		'referer'	 => true,
 		'type'		 => 'plain',
@@ -301,7 +301,7 @@ if (isset($form[$act]))
 		}
 
 
-		$headers = "From: ".$fromName;
+		$headers = "From: info@cardan86.ru";
 		//$headers = "Return-Path: <".$get_fromEmail.">\r\n";
 		//$headers .= "From: ".$fromName." <".$get_fromEmail.">\r\n";
 		//$headers .= "X-Mailer: Feedback, v0.3 (http://artuelle.com)\r\n";

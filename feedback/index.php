@@ -301,15 +301,16 @@ if (isset($form[$act]))
 		}
 
 
-		$headers = "Return-Path: <".$get_fromEmail.">\r\n";
-		$headers .= "From: ".$fromName." <".$get_fromEmail.">\r\n";
-		$headers .= "X-Mailer: Feedback, v0.3 (http://artuelle.com)\r\n";
-		$headers .= "X-Priority: 3\r\n";
-		$headers .= "Reply-To: ".$fromName." <".$get_fromEmail.">\r\n";
+		$headers = "From: ".$fromName;
+		//$headers = "Return-Path: <".$get_fromEmail.">\r\n";
+		//$headers .= "From: ".$fromName." <".$get_fromEmail.">\r\n";
+		//$headers .= "X-Mailer: Feedback, v0.3 (http://artuelle.com)\r\n";
+		//$headers .= "X-Priority: 3\r\n";
+		//$headers .= "Reply-To: ".$fromName." <".$get_fromEmail.">\r\n";
 		//$headers .= "To: ".$To."\r\n";
-		$headers .= "MIME-Version: 1.0\r\n";
-		$headers .= "Content-Type: text/".$form['cfg']['type']."; charset=\"".$form['cfg']['charset']."\"\r\n";
-		$headers .= "Content-Transfer-Encoding: 8bit\r\n";
+		//$headers .= "MIME-Version: 1.0\r\n";
+		//$headers .= "Content-Type: text/".$form['cfg']['type']."; charset=\"".$form['cfg']['charset']."\"\r\n";
+		//$headers .= "Content-Transfer-Encoding: 8bit\r\n";
 
 		$sb['body'] = "";
 		// парсим шаблон

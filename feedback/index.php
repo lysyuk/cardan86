@@ -14,12 +14,12 @@ $refererInfo = explode(":", $referer);
 $form['NP'] = array(
 	'fields' => array(
 		'NPWhichButton'	 => array(
-			'title'		 => 'Кнопка-активатор'
+			'title' => 'Кнопка-активатор'
 		),
-		'name'	 => array(
-			'title'		 => 'Имя'
+		'name'			 => array(
+			'title' => 'Имя'
 		),
-		'phone'	 => array(
+		'phone'			 => array(
 			'title'		 => 'Телефон',
 			'validate'	 => array(
 				'preg'		 => "/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/",
@@ -57,13 +57,13 @@ $form['NP'] = array(
 $form['getPrice'] = array(
 	'fields' => array(
 		'part'	 => array(
-			'title'		 => 'Деталь'
+			'title' => 'Деталь'
 		),
 		'model'	 => array(
-			'title'		 => 'Марка машины'
+			'title' => 'Марка машины'
 		),
 		'vin'	 => array(
-			'title'		 => 'ВИН'
+			'title' => 'ВИН'
 		),
 		'phone'	 => array(
 			'title'		 => 'Телефон',
@@ -103,13 +103,13 @@ $form['getPrice'] = array(
 $form['getPriceList'] = array(
 	'fields' => array(
 		'part'	 => array(
-			'title'		 => 'Деталь'
+			'title' => 'Деталь'
 		),
 		'model'	 => array(
-			'title'		 => 'Марка машины'
+			'title' => 'Марка машины'
 		),
 		'vin'	 => array(
-			'title'		 => 'ВИН'
+			'title' => 'ВИН'
 		),
 		'phone'	 => array(
 			'title'		 => 'Телефон',
@@ -337,114 +337,113 @@ if (isset($form[$act]))
 				$sb['body'] .= "Поисковик: ".$refererInfo[0]."\r\n";
 				$sb['body'] .= "Ключевое слово: ".$refererInfo[1]."\r\n";
 			}
-		}
-		// если есть что добавить
-		if (isset($form['cfg']['adds']) && is_array($form['cfg']['adds']))
-		{
-			$sb = adds($sb);
-		}
-
-		//отправка письма
-		$mail = mail($To, $sb['subject'], $sb['body'], $headers);
-
-		if ($mail)
-		{
-			$jsonBox['ok'] = 1;
-			$info[] = $form['cfg']['okay'];
-
-			//setcookie("limit", "1", time() + $form['cfg']['limit']);
-		}
-		else
-		{
-			$info[] = $form['cfg']['fuck'];
-		}
-	}
-}
-else
-{
-	$error[] = 'Нет настроек формы с именем #'.$act;
-}
-
-if (count($error) > 0)
-{
-	$jsonBox['errors'] = $error;
-}
-if (count($info) > 0)
-{
-	$jsonBox['infos'] = $info;
-}
-
-die(json_encode($jsonBox)); //мертвые с косами
-
-/* добавляет любые доп данные из вне в нужное место
- * (например в заголовок письма необходимо дабавить Ник юзера или Номер заказа )
- *
- *  */
-
-function adds($vars)
-{
-	global $form;
-	$adds = $form['cfg']['adds'];
-	foreach ($adds as $key => $opts)
-	{
-		if (is_string($key))
-		{
-			$one = array();
-			$two = array();
-			foreach ($opts as $i => $val)
+			// если есть что добавить
+			if (isset($form['cfg']['adds']) && is_array($form['cfg']['adds']))
 			{
-				if (isset($_POST[$val]))
-				{
-					$one[] = '%%'.$val.'%%';
-					$two[] = $_POST[$val];
-				}
+				$sb = adds($sb);
 			}
-			$vars[$key] = str_replace($one, $two, $vars[$key]);
-		}
-	}
-	return $vars;
-}
 
-/*
- * парсер шаблона
- */
+			//отправка письма
+			$mail = mail($To, $sb['subject'], $sb['body'], $headers);
 
-function tpl($vars)
-{
-	$tpl = 'tpl/'.$vars['name'].'.tpl';
-	if (file_exists($tpl))
-	{
-		$template = file_get_contents($tpl);
-		foreach ($vars['getdata'] as $name => $data)
-		{
-			$template = str_replace(array("%%".$name.".title%%", "%%".$name.".value%%"), array(
-				$data['title'], $data['value']), $template);
+			if ($mail)
+			{
+				$jsonBox['ok'] = 1;
+				$info[] = $form['cfg']['okay'];
+
+				//setcookie("limit", "1", time() + $form['cfg']['limit']);
+			}
+			else
+			{
+				$info[] = $form['cfg']['fuck'];
+			}
 		}
-		return $template;
 	}
 	else
 	{
-		return false;
+		$error[] = 'Нет настроек формы с именем #'.$act;
 	}
-}
 
-function is_utf8(&$data, $is_strict = true)
-{
-	if (is_array($data))
+	if (count($error) > 0)
 	{
-		foreach ($data as $k => &$v)
-			if ( ! is_utf8($v, $is_strict))
-				return false;
-		return true;
+		$jsonBox['errors'] = $error;
 	}
-	elseif (is_string($data))
+	if (count($info) > 0)
 	{
-		/*
-		  Рег. выражения имеют внутренние ограничения на длину повторов шаблонов поиска *, +, {x,y}
-		  равное 65536, поэтому используем preg_replace() вместо preg_match()
-		 */
-		$result = $is_strict ?
-				preg_replace('/(?>[\x09\x0A\x0D\x20-\x7E]           # ASCII
+		$jsonBox['infos'] = $info;
+	}
+
+	die(json_encode($jsonBox)); //мертвые с косами
+
+	/* добавляет любые доп данные из вне в нужное место
+	 * (например в заголовок письма необходимо дабавить Ник юзера или Номер заказа )
+	 *
+	 *  */
+
+	function adds($vars)
+	{
+		global $form;
+		$adds = $form['cfg']['adds'];
+		foreach ($adds as $key => $opts)
+		{
+			if (is_string($key))
+			{
+				$one = array();
+				$two = array();
+				foreach ($opts as $i => $val)
+				{
+					if (isset($_POST[$val]))
+					{
+						$one[] = '%%'.$val.'%%';
+						$two[] = $_POST[$val];
+					}
+				}
+				$vars[$key] = str_replace($one, $two, $vars[$key]);
+			}
+		}
+		return $vars;
+	}
+
+	/*
+	 * парсер шаблона
+	 */
+
+	function tpl($vars)
+	{
+		$tpl = 'tpl/'.$vars['name'].'.tpl';
+		if (file_exists($tpl))
+		{
+			$template = file_get_contents($tpl);
+			foreach ($vars['getdata'] as $name => $data)
+			{
+				$template = str_replace(array("%%".$name.".title%%", "%%".$name.".value%%"), array(
+					$data['title'], $data['value']), $template);
+			}
+			return $template;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	function is_utf8(&$data, $is_strict = true)
+	{
+		if (is_array($data))
+		{
+			foreach ($data as $k => &$v)
+				if ( ! is_utf8($v, $is_strict))
+					return false;
+			return true;
+		}
+		elseif (is_string($data))
+		{
+			/*
+			  Рег. выражения имеют внутренние ограничения на длину повторов шаблонов поиска *, +, {x,y}
+			  равное 65536, поэтому используем preg_replace() вместо preg_match()
+			 */
+			$result = $is_strict ?
+					preg_replace('/(?>[\x09\x0A\x0D\x20-\x7E]           # ASCII
                                   | [\xC2-\xDF][\x80-\xBF]            # non-overlong 2-byte
                                   |  \xE0[\xA0-\xBF][\x80-\xBF]       # excluding overlongs
                                   | [\xE1-\xEC\xEE\xEF][\x80-\xBF]{2} # straight 3-byte
@@ -454,25 +453,26 @@ function is_utf8(&$data, $is_strict = true)
                                   |  \xF4[\x80-\x8F][\x80-\xBF]{2}    # plane 16
                                  )*
                                 /sx', '', $data) :
-				#это рег. выражение проверяет более широкий диапазон ASCII [\x00-\x7E]
-				preg_replace('/.*/su', '', $data);
-		if (function_exists('preg_last_error'))
-		{
-			if (preg_last_error() === PREG_NO_ERROR)
-				return strlen($result) === 0;
-			if (preg_last_error() === PREG_BAD_UTF8_ERROR)
-				return false;
+					#это рег. выражение проверяет более широкий диапазон ASCII [\x00-\x7E]
+					preg_replace('/.*/su', '', $data);
+			if (function_exists('preg_last_error'))
+			{
+				if (preg_last_error() === PREG_NO_ERROR)
+					return strlen($result) === 0;
+				if (preg_last_error() === PREG_BAD_UTF8_ERROR)
+					return false;
+			}
 		}
+		elseif (is_scalar($data) || is_null($data))
+			return true;#~ null, integer, float, boolean
+		#~ object or resource
+		trigger_error('Scalar, null or array type expected, '.gettype($data).' given ', E_USER_WARNING);
+		return false;
 	}
-	elseif (is_scalar($data) || is_null($data))
-		return true;#~ null, integer, float, boolean
-	#~ object or resource
-	trigger_error('Scalar, null or array type expected, '.gettype($data).' given ', E_USER_WARNING);
-	return false;
-}
 
-function searchstr($str, $separator)
-{
-	$str = str_replace("+", " ", rawurldecode(preg_replace('~^http://(www\.)?(search\.live\.com|google\.(com|ru|com\.ua){1}|rambler\.ru|yandex\.ru|search\.yahoo\.com){1}/(.*)(&|\?)(q|words|text|p)=([^&]+)(.*)$~i', '$2'.$separator.'$7', $str)));
-	return is_utf8($str) ? $str : iconv('cp1251', 'UTF-8', $str);
-}
+	function searchstr($str, $separator)
+	{
+		$str = str_replace("+", " ", rawurldecode(preg_replace('~^http://(www\.)?(search\.live\.com|google\.(com|ru|com\.ua){1}|rambler\.ru|yandex\.ru|search\.yahoo\.com){1}/(.*)(&|\?)(q|words|text|p)=([^&]+)(.*)$~i', '$2'.$separator.'$7', $str)));
+		return is_utf8($str) ? $str : iconv('cp1251', 'UTF-8', $str);
+	}
+	

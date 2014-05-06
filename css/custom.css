@@ -242,7 +242,7 @@ h5 {
     margin: auto;
 }
 .section-mark {
-    background: url("../img/white_grey_bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: #fff;
     height: 333px;
     padding: 50px 0;
 }
@@ -1104,7 +1104,7 @@ video.fillWidth {
 }
 .browsehappy {       
     width: 40%
-    border: 1px solid #000;
+        border: 1px solid #000;
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);    
@@ -1116,5 +1116,76 @@ video.fillWidth {
     font-size: 25px;
     font-weight: 600;
     background-color: rgba(0, 0, 0, 0.75);
-    
+
+}
+
+#flexiselDemo1 {
+    display:none;
+}
+
+.nbs-flexisel-container {
+    position:relative;
+    max-width:100%;
+}
+.nbs-flexisel-ul {
+    position:relative;
+    width:9999px;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;   
+    text-align:center;  
+}
+
+.nbs-flexisel-inner {
+    overflow:hidden;
+    float:left;
+    width:100%;    
+}
+
+.nbs-flexisel-item {
+    float:left;
+    margin:0px;
+    padding:0px;
+    cursor:pointer;
+    position:relative;
+    line-height:0px;
+}
+.nbs-flexisel-item img {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width:93px;
+    max-height:70px;
+}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+    width: 70px;
+    height: 60px; 
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0.5;
+}
+.nbs-flexisel-nav-left:hover,
+.nbs-flexisel-nav-right:hover {
+    color: #FFF;
+    text-decoration: none;
+    opacity: .9;
+}
+.nbs-flexisel-nav-left {
+    left: -20px;
+    background: url("../img/arrow_left_comment.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.nbs-flexisel-nav-right {
+    right: -20px;
+    background: url("../img/arrow_right_comment.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+}
+.logo1-block {
+    margin-top: 35px;
 }

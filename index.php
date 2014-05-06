@@ -636,7 +636,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="col-md-3 text-center">
-							<img class="line-icon  img-responsive" src="img/comment_img.png">
+							<img class="img-thumbnail img-responsive" src="img/boss.jpg">
 						</div>
 						<div class="col-md-9 crew-text comment-block">
 							<div class="comment-cell">
@@ -644,7 +644,7 @@
 									<p>Для нас очень важно работать оперативно.  Мы понимаем насколько сильно желание нашего 
 										клиента сесть в  свой исправный автомобиль и вновь насладится поездками. Мы разделаем 
 										это стремление и стараемся помочь нашим клиентам в этом.</p>
-									<footer>Сергей | Директор магазина</footer>
+									<footer>Сергей Сергеевич | Директор магазина</footer>
 								</blockquote>                            
 							</div>
 						</div>

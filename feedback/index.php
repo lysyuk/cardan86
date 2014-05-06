@@ -14,12 +14,12 @@ $refererInfo = explode(":", $referer);
 $form['NP'] = array(
 	'fields' => array(
 		'NPWhichButton'	 => array(
-			'title'		 => 'Кнопка-активатор'
+			'title' => 'Кнопка-активатор'
 		),
-		'name'	 => array(
-			'title'		 => 'Имя'
+		'name'			 => array(
+			'title' => 'Имя'
 		),
-		'phone'	 => array(
+		'phone'			 => array(
 			'title'		 => 'Телефон',
 			'validate'	 => array(
 				'preg'		 => "/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/",
@@ -40,7 +40,7 @@ $form['NP'] = array(
 		'from_email' => 'info@cardan86.ru',
 		'from_name'	 => 'cardan86.ru',
 		'to_email'	 => 'info@cardan86.ru, trash@lgroup.biz',
-		'to_name'	 => 'cardan86.ru, cardan86.ru',
+		'to_name'	 => 'cardan86.ru, Liberty Group',
 		'geoip'		 => true,
 		'referer'	 => true,
 		'type'		 => 'plain',
@@ -57,13 +57,13 @@ $form['NP'] = array(
 $form['getPrice'] = array(
 	'fields' => array(
 		'part'	 => array(
-			'title'		 => 'Деталь'
+			'title' => 'Деталь'
 		),
 		'model'	 => array(
-			'title'		 => 'Марка машины'
+			'title' => 'Марка машины'
 		),
 		'vin'	 => array(
-			'title'		 => 'ВИН'
+			'title' => 'ВИН'
 		),
 		'phone'	 => array(
 			'title'		 => 'Телефон',
@@ -86,7 +86,7 @@ $form['getPrice'] = array(
 		'from_email' => 'info@cardan86.ru',
 		'from_name'	 => 'cardan86.ru',
 		'to_email'	 => 'info@cardan86.ru, trash@lgroup.biz',
-		'to_name'	 => 'cardan86.ru, cardan86.ru',
+		'to_name'	 => 'cardan86.ru, Liberty Group',
 		'geoip'		 => true,
 		'referer'	 => true,
 		'type'		 => 'plain',
@@ -103,13 +103,13 @@ $form['getPrice'] = array(
 $form['getPriceList'] = array(
 	'fields' => array(
 		'part'	 => array(
-			'title'		 => 'Деталь'
+			'title' => 'Деталь'
 		),
 		'model'	 => array(
-			'title'		 => 'Марка машины'
+			'title' => 'Марка машины'
 		),
 		'vin'	 => array(
-			'title'		 => 'ВИН'
+			'title' => 'ВИН'
 		),
 		'phone'	 => array(
 			'title'		 => 'Телефон',
@@ -132,7 +132,7 @@ $form['getPriceList'] = array(
 		'from_email' => 'info@cardan86.ru',
 		'from_name'	 => 'cardan86.ru',
 		'to_email'	 => 'info@cardan86.ru, trash@lgroup.biz',
-		'to_name'	 => 'cardan86.ru, cardan86.ru',
+		'to_name'	 => 'cardan86.ru, Liberty Group',
 		'geoip'		 => true,
 		'referer'	 => true,
 		'type'		 => 'plain',
@@ -301,15 +301,16 @@ if (isset($form[$act]))
 		}
 
 
-		$headers = "Return-Path: <".$get_fromEmail.">\r\n";
-		$headers .= "From: ".$fromName." <".$get_fromEmail.">\r\n";
-		$headers .= "X-Mailer: Feedback, v0.3 (http://artuelle.com)\r\n";
-		$headers .= "X-Priority: 3\r\n";
-		$headers .= "Reply-To: ".$fromName." <".$get_fromEmail.">\r\n";
+		$headers = "From: info@cardan86.ru";
+		//$headers = "Return-Path: <".$get_fromEmail.">\r\n";
+		//$headers .= "From: ".$fromName." <".$get_fromEmail.">\r\n";
+		//$headers .= "X-Mailer: Feedback, v0.3 (http://artuelle.com)\r\n";
+		//$headers .= "X-Priority: 3\r\n";
+		//$headers .= "Reply-To: ".$fromName." <".$get_fromEmail.">\r\n";
 		//$headers .= "To: ".$To."\r\n";
-		$headers .= "MIME-Version: 1.0\r\n";
-		$headers .= "Content-Type: text/".$form['cfg']['type']."; charset=\"".$form['cfg']['charset']."\"\r\n";
-		$headers .= "Content-Transfer-Encoding: 8bit\r\n";
+		//$headers .= "MIME-Version: 1.0\r\n";
+		//$headers .= "Content-Type: text/".$form['cfg']['type']."; charset=\"".$form['cfg']['charset']."\"\r\n";
+		//$headers .= "Content-Transfer-Encoding: 8bit\r\n";
 
 		$sb['body'] = "";
 		// парсим шаблон
@@ -322,21 +323,21 @@ if (isset($form[$act]))
 			}
 		}
 		// или отдаем голый текст
-		if (mb_strlen(trim($sb['body'])) < 10)
+		//if (mb_strlen(trim($sb['body'])) < 10)
+		//{
+		if (isset($form['cfg']['title']))
+			$sb['body'] .= $form['cfg']['title']."\r\n\r\n";
+		foreach ($getdata as $name => $data)
 		{
-			if (isset($form['cfg']['title']))
-				$sb['body'] .= $form['cfg']['title']."\r\n\r\n";
-			foreach ($getdata as $name => $data)
-			{
-				$sb['body'] .= $data['title'].": ".$data['value']."\r\n";
-			}
-			if ($form['cfg']['referer'])
-			{
-				$sb['body'] .= "\r\n\r\n";
-				$sb['body'] .= "Поисковик: ".$refererInfo[0]."\r\n";
-				$sb['body'] .= "Ключевое слово: ".$refererInfo[1]."\r\n";
-			}
+			$sb['body'] .= $data['title'].": ".$data['value']."\r\n";
 		}
+		if ($form['cfg']['referer'])
+		{
+			$sb['body'] .= "\r\n\r\n";
+			$sb['body'] .= "Поисковик: ".$refererInfo[0]."\r\n";
+			$sb['body'] .= "Ключевое слово: ".$refererInfo[1]."\r\n";
+		}
+		//}
 		// если есть что добавить
 		if (isset($form['cfg']['adds']) && is_array($form['cfg']['adds']))
 		{
@@ -344,7 +345,8 @@ if (isset($form[$act]))
 		}
 
 		//отправка письма
-		$mail = mail($To, $sb['subject'], $sb['body'], $headers);
+		//$mail = mail($To, $sb['subject'], $sb['body'], $headers);
+		$mail = mail($To, $sb['subject'], $sb['body'], 'From: info@cardan86.ru');
 
 		if ($mail)
 		{

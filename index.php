@@ -618,7 +618,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">					
+				<div class="row">
+					<div class="col-sm-6 col-md-6  comment-img text-center visible-xs">
+						<img class="line-icon  img-thumbnail img-responsive" src="img/comment2.jpg">
+					</div>
 					<div class="col-sm-6 col-md-6 comment-text comment-block">
 						<div class="comment-cell">
 							<strong>Дмитрий Анатольевич, Toyota Land Cruiser PRADO</strong><br>
@@ -630,7 +633,7 @@
 							дисками по ценам на 15% ниже средних! Рекомендую.
 						</div>                       
 					</div>
-					<div class="col-sm-6 col-md-6  comment-img text-center">
+					<div class="col-sm-6 col-md-6  comment-img text-center hidden-xs">
 						<img class="line-icon  img-thumbnail img-responsive" src="img/comment2.jpg">
 					</div>					
 				</div>

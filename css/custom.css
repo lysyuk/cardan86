@@ -1168,7 +1168,7 @@ video.fillWidth {
     height: 60px; 
     position: absolute;
     cursor: pointer;
-    z-index: 100;
+    z-index: 50;
     opacity: 0.5;
 }
 .nbs-flexisel-nav-left:hover,
@@ -1188,4 +1188,14 @@ video.fillWidth {
 }
 .logo1-block {
     margin-top: 35px;
+}
+@media (min-width: 992px) {
+    #menu .links a {        
+        font-size: 12px;
+    }
+}
+@media (min-width: 1200px) {
+    #menu .links a {        
+        font-size: 15px;
+    }
 }

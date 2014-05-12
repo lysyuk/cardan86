@@ -140,7 +140,7 @@ h5 {
     letter-spacing: 2px;
 }
 .head_bg {
-    background: url(../img/head_bg.png) no-repeat center center;
+    background: url(../img/head_bg.png) no-repeat center;
     height: 550px;
 }
 
@@ -1188,6 +1188,120 @@ video.fillWidth {
 }
 .logo1-block {
     margin-top: 35px;
+}
+@media (min-width: 768px) {
+    .grey_bottom_border {
+        padding: 73px 0 0 0;       
+    }
+    .top {
+        height: 88px;
+    }
+    .topp {
+        padding: 10px 0;
+    }
+    #menu img {
+        margin-top: 13px;
+    }
+    #menu .links {
+        padding: 10px 0;
+    }
+    #menu .links a {               
+        font-size: 12px; 
+        margin-bottom: 5px;
+    }
+    .contactphone {
+        font-size: 20px;
+        margin-top: -4px;
+    }
+    .btn-custom {
+        font-size: 13px;
+    }
+    .headtitle {       
+        font-size: 34px;        
+    }
+    .top-form-bg {        
+        margin-right: -30px;
+    }
+    .grey-title {        
+        font-size: 26px;        
+    }
+    .blue-title {        
+        font-size: 26px;       
+    }
+    .white-title {
+        font-size: 26px;       
+    }
+    .section-header {
+        padding-bottom: 0px;       
+    }
+    .section-line01 {
+        padding: 0px 0 25px;        
+    }
+    .section-mark {       
+        height: 212px;
+        padding: 25px 0;
+    }
+    .section-engine-kpp {
+        padding: 25px 0; 
+    }
+    .engine-text {
+        font-size: 14px;
+    }
+    .top-50 {
+        margin-top: 0px;
+    }
+    .top-25 {
+        margin-top: 25px;
+    }
+    .section-kuzov-part {        
+        padding: 0px 0 25px;
+    }
+    .category-block {
+        padding: 25px 0;
+    }
+    .bottom-25 {
+        margin-bottom: 25px;
+    }
+    .section-discount .container {
+        padding: 25px 15px;
+    }
+    #video-container {
+        padding: 0 0;
+        background: url(../video/poster.jpg) no-repeat center center scroll;
+        -moz-background-size: cover;
+        -webkit-background-size: 102% auto;
+        -khtml-background-size: cover;
+        -o-background-size: 102% auto;
+        background-size: cover;
+    }
+    .section-how-work {
+        padding: 25px 0 25px;       
+    }
+    .section-why {
+        padding: 25px 0 25px;        
+    }
+    .section-comments {
+        padding: 25px 0;
+    }
+    .comment-img {
+        padding: 15px;
+    }
+    .comment-block {       
+        height: auto;
+    }
+    .comment-text {       
+        font-size: 15px;
+        padding: 15px;
+    }
+    .section-crew {
+        padding: 25px 0;
+    }
+    blockquote {
+        font-size: 16px;
+    }
+    .section-contact {
+        padding: 25px 0;
+    }
 }
 @media (min-width: 992px) {
     #menu .links a {        

@@ -14,20 +14,9 @@ $(document).ready(function() {
 
     $(".phone").mask("+7 (999) 999-9999", {placeholder: " "});
 
-    var note = $('#note');
-    ts = new Date();
-    ts.setHours(ts.getHours() + 22);
-    ts.setMinutes(ts.getMinutes() + 56);
-    ts.setSeconds(ts.getSeconds() + 60);
-    newYear = true;
-
-    if ((new Date()) > ts) {
-        ts = (new Date()).getTime() + 10 * 24 * 60 * 60 * 1000;
-    }
-
     $('#countdown').countdown({
         image: 'img/digits.png',
-        startTime: '01:12:12:00'
+        endTime: new Date('05/31/14 23:59:59')
     });
 
     $('.getPriceButton').click(function() {
@@ -45,20 +34,20 @@ $(document).ready(function() {
         visibleItems: 5,
         animationSpeed: 1000,
         autoPlay: true,
-        autoPlaySpeed: 3000,            
+        autoPlaySpeed: 3000,
         pauseOnHover: true,
         enableResponsiveBreakpoints: true,
-        responsiveBreakpoints: { 
-            portrait: { 
-                changePoint:480,
+        responsiveBreakpoints: {
+            portrait: {
+                changePoint: 480,
                 visibleItems: 2
-            }, 
-            landscape: { 
-                changePoint:640,
+            },
+            landscape: {
+                changePoint: 640,
                 visibleItems: 3
             },
-            tablet: { 
-                changePoint:768,
+            tablet: {
+                changePoint: 768,
                 visibleItems: 4
             }
         }

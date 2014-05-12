@@ -91,7 +91,7 @@
             <div class="modal-dialog modal-sm">
                 <div class="modal-content">
                     <form action="" class="form-horizontal" role="form"
-                          autocomplete="off"  name="getPriceList" >
+                          autocomplete="off"  name="getPriceList">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             <h4 class="modal-title" id="getPriceListLabel">Какая цена?</h4>
@@ -135,20 +135,20 @@
 		<div id="menu" class="top">
 			<div class="container">
 				<div class="row topp">
-					<div class="col-md-12 grey_bottom_border"></div>
-					<div class="col-md-4">
-						<a href="#top"><img src="img/top_logo.png"></a>
+					<div class="col-sm-12 col-md-12 grey_bottom_border"></div>
+					<div class="col-sm-3 col-md-4">
+						<a href="#top"><img class="img-responsive" src="img/top_logo.png"></a>
 					</div>
-					<div class="col-md-3 links">
+					<div class="col-sm-3 col-md-3 links">
 						<a href="#link1">Контрактные двигатели</a><br>
 						<a href="#link2">Запчасти на заказ</a>
 					</div>
-					<div class="col-md-2 links">
+					<div class="col-sm-3 col-md-2 links">
 						<a href="#link3">Акция</a><br>
 						<a href="#link4">Почему выбирают нас</a>
 					</div>
-					<div class="col-md-3 text-center">
-						<span class="contactphone">8 (982) 411-29-89</span>
+					<div class="col-sm-3 col-md-3 text-center">
+						<span class="contactphone">8 (3462) 37-22-42</span>
 						<button data-target="#NP" 
 								data-toggle="modal" 
 								data-label="Заказ звонка" 
@@ -163,18 +163,17 @@
 
 		<!-- ================================ ШАПКА =========================== -->
 		<div class="section-header">
-
 			<div class="container">
 				<div class="row text-center">
 					<span class="headtitle">Безошибочный подбор автозапчастей<br/>по каталогам производителей</span>
 				</div>
 				<div class="row">
-					<div class="col-md-12 head_bg">
-						<div class="col-md-5 col-md-offset-7">
+					<div class="col-sm-12 col-md-12 head_bg">
+						<div class="col-sm-5 col-sm-offset-7 col-md-5 col-md-offset-7">
 							<div class="head-form top-form-bg">
 								<div class="top-form-inputs">
 									<h3 class="text-center form_title">Подать заявку</h3>
-									<form action="" role="form" name="getPrice">	
+									<form action="" role="form" name="getPrice" autocomplete="off">	
 										<div class="form-group">
 											<div class="icon-addon addon-md">
 												<input type="text" class="form-control" name="part" placeholder="Деталь">
@@ -214,10 +213,8 @@
 		<!-- ================================ НАШИ ПРЕИМУЩЕСТВА =========================== -->
 
 		<div class="section-line01">
-
 			<div class="container">
-
-				<div class="row">
+				<div class="row hidden-sm hidden-xs">
 					<div class="col-md-2 text-center">
 						<img class="line-icon" src="img/1line_icon01.png">
 						<p>Квалифицированные сотрудники</p>
@@ -242,9 +239,35 @@
 						<img class="line-icon img-responsive" src="img/1line_icon06.png">
 						<p>Весь комплекс услуг по ремонту «под ключ»</p>
 					</div>
-
 				</div>
-
+				<div class="row hidden-md hidden-lg">
+					<div class="col-sm-4 text-center">
+						<img class="line-icon" src="img/1line_icon01.png">
+						<p>Квалифицированные сотрудники</p>
+					</div>
+					<div class="col-sm-4 text-center">
+						<img class="line-icon img-responsive" src="img/1line_icon02.png">
+						<p>Оперативная обработка вашей заявки по онлайн каталогам (за 30 минут)</p>
+					</div>
+					<div class="col-sm-4 text-center">
+						<img class="line-icon img-responsive" src="img/1line_icon03.png">
+						<p>Гарантия безошибочного подбора деталей</p>
+					</div>
+				</div>
+				<div class="row hidden-md hidden-lg">
+					<div class="col-sm-4 text-center">
+						<img class="line-icon img-responsive" src="img/1line_icon04.png">
+						<p>Организация доставки по ХМАО, ЯНАО</p>
+					</div>
+					<div class="col-sm-4 text-center">
+						<img class="line-icon img-responsive" src="img/1line_icon05.png">
+						<p>Бесплатная доставка крупногабарита в г. Сургуте до двери</p>
+					</div>
+					<div class="col-sm-4 text-center">
+						<img class="line-icon img-responsive" src="img/1line_icon06.png">
+						<p>Весь комплекс услуг по ремонту «под ключ»</p>
+					</div>
+				</div>
 			</div><!-- /.container -->
 		</div><!-- /.content-section-a -->
 		<!-- ================================ НАШИ ПРЕИМУЩЕСТВА =========================== -->
@@ -252,10 +275,9 @@
 		<!-- ================================ НА КАКИЕ МАРКИ МЫ ПОДБИРАЕМ =========================== -->
 
 		<div class="section-mark">
-
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 text-center grey-title">
+					<div class="col-sm-12 col-md-12 text-center grey-title">
 						НА КАКИЕ МАРКИ АВТОМОБИЛЕЙ МЫ ПОДБИРАЕМ ЗАПЧАСТИ
 					</div>
 				</div> 
@@ -298,11 +320,11 @@
 
 		<div id="link1" class="section-engine-kpp">
 			<div class="container">
-				<div class="col-md-12 text-center blue-title">
+				<div class="col-sm-12 col-md-12 text-center blue-title">
 					КОНТРАКТНЫЕ ДВИГАТЕЛИ И КПП
 				</div>
 				<div class="row">
-					<div class="col-md-6 engine-text top-50">
+					<div class="col-sm-6 col-md-6 engine-text top-50 top-25">
 						<div class="well">
 							<p>
 								Ремонт двигателя или КПП, так же как и покупка нового агрегата, не всегда целесообразна – 
@@ -316,7 +338,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-md-6 top-50">
+					<div class="col-sm-6 col-md-6 top-50 top-25">
 						<img class=" img-responsive center-block" src="img/engine_pic.jpg">
 					</div>
 				</div>
@@ -337,31 +359,31 @@
 		<div id="link2" class="section-kuzov-part">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 text-center grey-title category-block">
+					<div class="col-sm-12 col-md-12 text-center grey-title category-block">
 						КУЗОВНЫЕ ЗАПЧАСТИ
 					</div>
-					<div class="col-md-3 ">
+					<div class="col-sm-6 col-md-3 bottom-25">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/kuz1.jpg">
 							<p>Фары, фонари</p>
 							<button data-xxx="Фары, фонари" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-md-3 ">
+					<div class="col-sm-6 col-md-3 bottom-25">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/kuz2.jpg">
 							<p>Бампера</p>
 							<button data-xxx="Бампера" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-md-3 ">
+					<div class="col-sm-6 col-md-3">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/kuz3.jpg">
 							<p>Крылья</p>
 							<button data-xxx="Крылья" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-md-3 ">
+					<div class="col-sm-6 col-md-3">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/kuz4.jpg">
 							<p>Капоты</p>
@@ -370,32 +392,32 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-12 text-center grey-title category-block">
+					<div class="col-sm-12 col-md-12 text-center grey-title category-block">
 						ЭЛЕМЕНТЫ ХОДОВОЙ ЧАСТИ
 					</div>
 
-					<div class="col-md-3 ">
+					<div class="col-sm-6 col-md-3 bottom-25">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/hod1.jpg">
 							<p>Амортизаторы</p>
 							<button data-xxx="Амортизаторы" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-md-3 ">
+					<div class="col-sm-6 col-md-3 bottom-25">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/hod2.jpg">
 							<p>Ступичные подшипники</p>
 							<button data-xxx="Ступичные подшипники" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-md-3 ">
+					<div class="col-sm-6 col-md-3">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/hod3.jpg">
 							<p>Шрусы</p>
 							<button data-xxx="Шрусы" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-md-3 ">
+					<div class="col-sm-6 col-md-3">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/hod4.jpg">
 							<p>Стойки стабилизатора</p>
@@ -404,31 +426,31 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-12 text-center grey-title category-block">
+					<div class="col-sm-12 col-md-12 text-center grey-title category-block">
 						ЗАПЧАСТИ ДЛЯ ТО
 					</div>
-					<div class="col-md-3 ">
+					<div class="col-sm-6 col-md-3 bottom-25">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/to1.jpg">
 							<p>Колодки</p>
 							<button data-xxx="Колодки" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-md-3 ">
+					<div class="col-sm-6 col-md-3 bottom-25">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/to2.jpg">
 							<p>Фильтры</p>
 							<button data-xxx="Фильтры" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-md-3 ">
+					<div class="col-sm-6 col-md-3">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/to3.jpg">
 							<p>Ремни</p>
 							<button data-xxx="Ремни" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-md-3 ">
+					<div class="col-sm-6 col-md-3">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/to4.jpg">
 							<p>Свечи</p>
@@ -445,35 +467,26 @@
 
 		<div id="link3" class="section-discount">  
 			<div id="video-container">
-				<video autoplay loop poster="video/poster.jpg" class="fillWidth">                
+				<video autoplay loop poster="video/poster.jpg" class="fillWidth hidden-sm hidden-xs">                
 					<source src="video/video.mp4" type="video/mp4">
 					<source src="video/video.webm" type="video/webm">
 				</video>
 			</div>
 			<div class="container">
-				<div class="col-md-12 text-center blue-title sell">
-					УСПЕЙ ПОЛУЧИТЬ СКИДКУ НА КОМПЛЕКТ ВЕСЕННЕГО ТО
-				</div>
-
-				<div class="row">
-					<div class="col-md-12 discount-bg text-center">
-						<div class="col-md-10 col-md-offset-1 timer-digits">
-							<div id="countdown" class="center-block"></div>
-							<!--<div class="desc">
-								<div>Días</div>
-								<div>Horas</div>
-								<div>Minutos</div>
-								<div>Segundos</div>
-							</div>-->
-						</div>    
-						<div class="col-md-10 col-md-offset-1">
-							<button data-toggle="modal" 
-									data-target="#NP"
-									data-label="Скидка на ТО" 
-									data-button="Получить"
-									class="btn btn-lg btn-custom btn-np">Получить скидку на ТО</button>
-						</div>
-					</div>
+				<div class="row">	
+					<div class="col-sm-12 col-md-12 text-center blue-title sell">
+						УСПЕЙ ПОЛУЧИТЬ СКИДКУ НА КОМПЛЕКТ ВЕСЕННЕГО ТО
+					</div>								
+					<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 timer-digits">
+						<div id="countdown" class="center-block"></div>						
+					</div>    
+					<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+						<button data-toggle="modal" 
+								data-target="#NP"
+								data-label="Скидка %" 
+								data-button="Получить"
+								class="btn btn-lg btn-custom btn-np center-block">Получить скидку</button>
+					</div>					
 				</div>
 			</div><!-- /.container -->           
 		</div><!-- /.content-section-a -->
@@ -484,10 +497,10 @@
 		<div class="section-how-work">
 
 			<div class="container">
-				<div class="col-md-12 text-center white-title">
+				<div class="col-sm-12 col-md-12 text-center white-title">
 					КАК МЫ РАБОТАЕМ
 				</div>
-				<div class="row">
+				<div class="row hidden-sm hidden-xs">
 					<div class="col-md-2 text-center">
 						<img class="line-icon" src="img/2line_icon01.png">
 						<p>Вы оставляете заявку на интересующую вас деталь</p>
@@ -513,6 +526,34 @@
 						<p>Вы вносите оставшуюся часть оплаты</p>
 					</div>
 				</div>
+				<div class="row hidden-md hidden-lg">
+					<div class="col-sm-4 text-center">
+						<img class="line-icon" src="img/2line_icon01.png">
+						<p>Вы оставляете заявку на интересующую вас деталь</p>
+					</div>
+					<div class="col-sm-4 text-center">
+						<img class="line-icon" src="img/2line_icon02.png">
+						<p>Наши специалисты безошибочно подбирают деталь по онлайн каталогам</p>
+					</div>
+					<div class="col-sm-4 text-center">
+						<img class="line-icon" src="img/2line_icon03.png">
+						<p>Мы перезваниваем Вам и сообщаем 3 цены на деталь: оригинальную, не оригинальную и Б/У</p>
+					</div>
+				</div>
+				<div class="row hidden-md hidden-lg">					
+					<div class="col-sm-4 text-center">
+						<img class="line-icon" src="img/2line_icon04.png">
+						<p>Вы вносите 50% предоплаты</p>
+					</div>
+					<div class="col-sm-4 text-center">
+						<img class="line-icon" src="img/2line_icon05.png">
+						<p>Мы доставляем ваш заказ</p>
+					</div>
+					<div class="col-sm-4 text-center">
+						<img class="line-icon" src="img/2line_icon06.png">
+						<p>Вы вносите оставшуюся часть оплаты</p>
+					</div>
+				</div>				
 			</div><!-- /.container -->
 		</div><!-- /.content-section-a -->
 		<!-- ================================ КАК МЫ РАБОТАЕМ =========================== -->
@@ -520,25 +561,24 @@
 		<!-- ================================ ПОЧЕМУ ВЫБИРАЮТ НАС =========================== -->
 
 		<div id="link4" class="section-why">
-
 			<div class="container">
-				<div class="col-md-12 text-center grey-title">
+				<div class="col-sm-12 col-md-12 text-center grey-title">
 					ПОЧЕМУ ВЫБИРАЮТ НАС
 				</div>
 				<div class="row">
-					<div class="col-md-3 text-center">
+					<div class="col-sm-3 col-md-3 text-center">
 						<img class="line-icon img-responsive" src="img/3line_icon01.png">
 						<p>Заявки обрабатываются быстро. Мы ценим время наших клиентов</p>
 					</div>
-					<div class="col-md-3 text-center">
+					<div class="col-sm-3 col-md-3 text-center">
 						<img class="line-icon img-responsive" src="img/3line_icon02.png">
 						<p>Трехценовое предложение позволит выбрать то, что подходит вашему бюджету</p>
 					</div>
-					<div class="col-md-3 text-center">
+					<div class="col-sm-3 col-md-3 text-center">
 						<img class="line-icon img-responsive" src="img/3line_icon03.png">
 						<p>Мы несем ответственность за качественное обслуживание наших клиентов</p>
 					</div>
-					<div class="col-md-3 text-center">
+					<div class="col-sm-3 col-md-3 text-center">
 						<img class="line-icon img-responsive" src="img/3line_icon04.png">
 						<p>Все виды ремонтных работ</p>
 					</div>                   
@@ -550,77 +590,62 @@
 		<!-- ================================ ОТЗЫВЫ КЛИЕНТОВ =========================== -->
 
 		<div class="section-coffee">
-			<div class="col-md-4 col-md-offset-2 kofe-block">                
+			<div class="col-sm-6 col-md-4 col-md-offset-2 kofe-block">                
 				<div class="kofe-text well">
 					Мы любим хороший кофе и рады угостить им гостей!
 				</div>
 			</div>
 		</div>
 		<div class="section-comments">
-
 			<div class="container">
-				<div class="col-md-12 text-center blue-title">
+				<div class="col-sm-12 col-md-12 text-center blue-title">
 					ОТЗЫВЫ КЛИЕНТОВ
 				</div>
 
-				<div class="row">
-					<div class="col-md-12">
-						<div class="col-md-6 comment-img text-center">
-							<img class="line-icon img-thumbnail img-responsive" src="img/comment1.jpg">
-						</div>
-
-						<div class="col-md-6 comment-text comment-block">
-							<div class="comment-cell">
-								<strong>Александр, Volkswagen Touareg</strong><br>
-								Ребята работают очень оперативно. Так же радует техническая подкованность. Я обращался 
-								сначала к официалам, так они технически мне показались менее грамотные, точнее неохотно 
-								делились информацией. Здесь общался с Сергеем - ответил на все мои вопросы - объяснил 
-								что к чему и почему! В общем мне понравилось отношение ко мне... Всем рекомендую!
-							</div>
+				<div class="row">					
+					<div class="col-sm-6 col-md-6 comment-img text-center">
+						<img class="line-icon img-thumbnail img-responsive" src="img/comment1.jpg">
+					</div>
+					<div class="col-sm-6 col-md-6 comment-text comment-block">
+						<div class="comment-cell">
+							<strong>Александр, Volkswagen Touareg</strong><br>
+							Ребята работают очень оперативно. Так же радует техническая подкованность. Я обращался 
+							сначала к официалам, так они технически мне показались менее грамотные, точнее неохотно 
+							делились информацией. Здесь общался с Сергеем - ответил на все мои вопросы - объяснил 
+							что к чему и почему! В общем мне понравилось отношение ко мне... Всем рекомендую!
 						</div>
 					</div>
 				</div>
-
-				<div class="row">
-					<div class="col-md-12">
-						<div class="col-md-6 comment-text comment-block">
-							<div class="comment-cell">
-								<strong>Дмитрий Анатольевич, Toyota Land Cruiser PRADO</strong><br>
-								Нашел магазин в электронном справочнике, приобрел магазине все оригинальные расходные
-								материалы, масла и спецжидкости для проведения комплексного ТО своего автомобиля. 
-								Получил направление на СТО. Все работы были выполнены высококвалифицированными 
-								специалистами в срок по ценам ниже на 15%. Был приятно удивлен. Теперь больше 
-								уверенности в своем автомобиле и еще приобрел комплекты зимних и летних шин с 
-								дисками по ценам на 15% ниже средних! Рекомендую.
-							</div>                       
-						</div>
-						<div class="col-md-6  comment-img text-center">
-							<img class="line-icon  img-thumbnail img-responsive" src="img/comment2.jpg">
-						</div>
+				<div class="row">					
+					<div class="col-sm-6 col-md-6 comment-text comment-block">
+						<div class="comment-cell">
+							<strong>Дмитрий Анатольевич, Toyota Land Cruiser PRADO</strong><br>
+							Нашел магазин в электронном справочнике, приобрел магазине все оригинальные расходные
+							материалы, масла и спецжидкости для проведения комплексного ТО своего автомобиля. 
+							Получил направление на СТО. Все работы были выполнены высококвалифицированными 
+							специалистами в срок по ценам ниже на 15%. Был приятно удивлен. Теперь больше 
+							уверенности в своем автомобиле и еще приобрел комплекты зимних и летних шин с 
+							дисками по ценам на 15% ниже средних! Рекомендую.
+						</div>                       
 					</div>
+					<div class="col-sm-6 col-md-6  comment-img text-center">
+						<img class="line-icon  img-thumbnail img-responsive" src="img/comment2.jpg">
+					</div>					
 				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="col-md-6 comment-img text-center">
-							<img class="line-icon img-thumbnail img-responsive" src="img/comment3.jpg">
-						</div>
-
-						<div class="col-md-6 comment-text comment-block">
-							<div class="comment-cell">
-								<strong>Иван Витальевич</strong><br>
-								Я приобрел авто в автосалоне и укомплектовал ее до класса люкс с помощью магазина 
-								Кардан86. Коврики салона, багажника, противотуманные фары, сигнализация, чехлы на
-								сидения и множество других аксессуаров И головное устройство DVD поставил. 
-								Существенно сэкономил! Ребятам спасибо.
-							</div>
-						</div>
+				<div class="row">					
+					<div class="col-sm-6 col-md-6 comment-img text-center">
+						<img class="line-icon img-thumbnail img-responsive" src="img/comment3.jpg">
 					</div>
-				</div>
-				<!--
-				<div class="col-md-12 text-center">
-				   <button type="button" data-target="#design" data-toggle="modal" class="btn btn-lg btn-custom">Больше отзывов</button>
-				</div>
-				-->
+					<div class="col-sm-6 col-md-6 comment-text comment-block">
+						<div class="comment-cell">
+							<strong>Иван Витальевич</strong><br>
+							Я приобрел авто в автосалоне и укомплектовал ее до класса люкс с помощью магазина 
+							Кардан86. Коврики салона, багажника, противотуманные фары, сигнализация, чехлы на
+							сидения и множество других аксессуаров И головное устройство DVD поставил. 
+							Существенно сэкономил! Ребятам спасибо.
+						</div>
+					</div>					
+				</div>				
 			</div><!-- /.container -->
 		</div><!-- /.content-section-a -->
 		<!-- ================================ ОТЗЫВЫ КЛИЕНТОВ =========================== -->
@@ -628,17 +653,15 @@
 		<!-- ================================ НАША КОМАНДА =========================== -->
 
 		<div class="section-crew">
-
 			<div class="container">
-				<div class="col-md-12 text-center grey-title">
+				<div class="col-sm-12 col-md-12 text-center grey-title">
 					Что для нас важно
 				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="col-md-3 text-center">
+				<div class="row">					
+						<div class="col-sm-4 col-md-3 text-center">
 							<img class="img-thumbnail img-responsive" src="img/boss.jpg">
 						</div>
-						<div class="col-md-9 crew-text comment-block">
+						<div class="col-sm-8 col-md-9 crew-text comment-block">
 							<div class="comment-cell">
 								<blockquote>
 									<p>Для нас очень важно работать оперативно.  Мы понимаем насколько сильно желание нашего 
@@ -647,8 +670,7 @@
 									<footer>Сергей Сергеевич | Директор магазина</footer>
 								</blockquote>                            
 							</div>
-						</div>
-					</div>
+						</div>					
 				</div>     
 			</div><!-- /.container -->
 		</div><!-- /.content-section-a -->
@@ -660,23 +682,23 @@
 
 		<div class="section-contact">
 			<div class="container">
-				<div class="col-md-12 text-center white-title">
+				<div class="col-sm-12 col-md-12 text-center white-title">
 					НАШ АДРЕС
 				</div>
 			</div><!-- /.container -->
 			<script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=nOg8_J8sejjLmg6XsBPSfLJl3KwhjuyS&height=450"></script>
 			<div class="container">
 				<div class="row bottom-line">
-					<div class="col-md-10 col-md-offset-2">
+					<div class="col-sm-12 col-md-10 col-md-offset-2">
 						<p class="bottom-text"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;&nbsp;
 							Нефтеюганское шоссе, д. 26, офис 208, г. Сургут</p>                    
 						<p class="bottom-text">
-							<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;&nbsp;8 (982) 411-29-89</p>
+							<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;&nbsp;8 (3462) 37-22-42</p>
 					</div>
 				</div>
 				<div class="row bottom-line">
-					<div class="col-md-4 bottom-text">...остались вопросы?</div>
-					<div class="col-md-4 text-center">
+					<div class="col-sm-6 col-md-4 bottom-text">...остались вопросы?</div>
+					<div class="col-sm-6 col-md-4 text-center">
 						<button type="button" data-toggle="modal"
 								data-target="#NP"
 								data-label="Остались вопросы?" 
@@ -703,28 +725,33 @@
 		<script src="js/script.js"></script>
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript">
-		(function (d, w, c) {
-			(w[c] = w[c] || []).push(function() {
-				try {
-					w.yaCounter24895019 = new Ya.Metrika({id:24895019,
-							webvisor:true,
-							clickmap:true,
-							trackLinks:true,
-							accurateTrackBounce:true});
-				} catch(e) { }
-			});
+			(function(d, w, c) {
+				(w[c] = w[c] || []).push(function() {
+					try {
+						w.yaCounter24895019 = new Ya.Metrika({id: 24895019,
+							webvisor: true,
+							clickmap: true,
+							trackLinks: true,
+							accurateTrackBounce: true});
+					} catch (e) {
+					}
+				});
 
-			var n = d.getElementsByTagName("script")[0],
-				s = d.createElement("script"),
-				f = function () { n.parentNode.insertBefore(s, n); };
-			s.type = "text/javascript";
-			s.async = true;
-			s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+				var n = d.getElementsByTagName("script")[0],
+						s = d.createElement("script"),
+						f = function() {
+							n.parentNode.insertBefore(s, n);
+						};
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
 
-			if (w.opera == "[object Opera]") {
-				d.addEventListener("DOMContentLoaded", f, false);
-			} else { f(); }
-		})(document, window, "yandex_metrika_callbacks");
+				if (w.opera == "[object Opera]") {
+					d.addEventListener("DOMContentLoaded", f, false);
+				} else {
+					f();
+				}
+			})(document, window, "yandex_metrika_callbacks");
 		</script>
 		<noscript><div><img src="//mc.yandex.ru/watch/24895019" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 		<!-- /Yandex.Metrika counter -->

@@ -135,19 +135,19 @@
 		<div id="menu" class="top">
 			<div class="container">
 				<div class="row topp">
-					<div class="col-sm-12 col-md-12 grey_bottom_border"></div>
-					<div class="col-sm-3 col-md-4">
+					<div class="col-xs-12 col-sm-12 col-md-12 grey_bottom_border hidden-xs"></div>
+					<div class="col-xs-12 col-sm-3 col-md-4">
 						<a href="#top"><img class="img-responsive" src="img/top_logo.png"></a>
 					</div>
-					<div class="col-sm-3 col-md-3 links">
+					<div class="col-sm-3 col-md-3 links hidden-xs">
 						<a href="#link1">Контрактные двигатели</a><br>
 						<a href="#link2">Запчасти на заказ</a>
 					</div>
-					<div class="col-sm-3 col-md-2 links">
+					<div class="col-sm-3 col-md-2 links hidden-xs">
 						<a href="#link3">Акция</a><br>
 						<a href="#link4">Почему выбирают нас</a>
 					</div>
-					<div class="col-sm-3 col-md-3 text-center">
+					<div class="col-xs-12 col-sm-3 col-md-3 text-center hidden-xs">
 						<span class="contactphone">8 (3462) 37-22-42</span>
 						<button data-target="#NP" 
 								data-toggle="modal" 
@@ -165,11 +165,13 @@
 		<div class="section-header">
 			<div class="container">
 				<div class="row text-center">
-					<span class="headtitle">Безошибочный подбор автозапчастей<br/>по каталогам производителей</span>
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<span class="headtitle">Безошибочный подбор автозапчастей<br/>по каталогам производителей</span>
+					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-12 col-md-12 head_bg">
-						<div class="col-sm-5 col-sm-offset-7 col-md-5 col-md-offset-7">
+					<div class="col-xs-12 col-sm-12 col-md-12 head_bg">
+						<div class="col-xs-12 col-sm-5 col-sm-offset-7 col-md-5 col-md-offset-7">
 							<div class="head-form top-form-bg">
 								<div class="top-form-inputs">
 									<h3 class="text-center form_title">Подать заявку</h3>
@@ -282,7 +284,7 @@
 					</div>
 				</div> 
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 logo1-block ">
+					<div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 logo1-block ">
 						<ul id="flexiselDemo1"> 
 							<li class="nbs-flexisel-item"><img  src="img/volvo.jpg"></li>
 							<li class="nbs-flexisel-item"><img  src="img/suzuki.jpg"></li>
@@ -320,11 +322,11 @@
 
 		<div id="link1" class="section-engine-kpp">
 			<div class="container">
-				<div class="col-sm-12 col-md-12 text-center blue-title">
+				<div class="col-xs-12 col-sm-12 col-md-12 text-center blue-title">
 					КОНТРАКТНЫЕ ДВИГАТЕЛИ И КПП
 				</div>
 				<div class="row">
-					<div class="col-sm-6 col-md-6 engine-text top-50 top-25">
+					<div class="col-xs-12 col-sm-6 col-md-6 engine-text top-50 top-25">
 						<div class="well">
 							<p>
 								Ремонт двигателя или КПП, так же как и покупка нового агрегата, не всегда целесообразна – 
@@ -338,12 +340,12 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-6 top-50 top-25">
+					<div class="col-xs-12 col-sm-6 col-md-6 top-50 top-25">
 						<img class=" img-responsive center-block" src="img/engine_pic.jpg">
 					</div>
 				</div>
 
-				<div class="col-md-12 text-center top-50">
+				<div class="col-xs-12 col-md-12 text-center top-50">
 					<button data-toggle="modal" data-target="#NP"
 							data-label="Контрактные двигатели" 
 							data-button="Узнать больше"
@@ -376,7 +378,7 @@
 							<button data-xxx="Бампера" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3">
+					<div class="col-sm-6 col-md-3 bottom-xs-25">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/kuz3.jpg">
 							<p>Крылья</p>
@@ -410,7 +412,7 @@
 							<button data-xxx="Ступичные подшипники" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3">
+					<div class="col-sm-6 col-md-3 bottom-xs-25">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/hod3.jpg">
 							<p>Шрусы</p>
@@ -443,7 +445,7 @@
 							<button data-xxx="Фильтры" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3">
+					<div class="col-sm-6 col-md-3 bottom-xs-25">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/to3.jpg">
 							<p>Ремни</p>
@@ -465,7 +467,7 @@
 
 		<!-- ================================ СКИДКИ =========================== -->
 
-		<div id="link3" class="section-discount">  
+		<div id="link3" class="section-discount hidden-xs">  
 			<div id="video-container">
 				<video autoplay loop poster="video/poster.jpg" class="fillWidth hidden-sm hidden-xs">                
 					<source src="video/video.mp4" type="video/mp4">
@@ -474,13 +476,13 @@
 			</div>
 			<div class="container">
 				<div class="row">	
-					<div class="col-sm-12 col-md-12 text-center blue-title sell">
+					<div class="col-xs-12 col-sm-12 col-md-12 text-center blue-title sell">
 						УСПЕЙ ПОЛУЧИТЬ СКИДКУ НА КОМПЛЕКТ ВЕСЕННЕГО ТО
 					</div>								
-					<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 timer-digits">
+					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 timer-digits">
 						<div id="countdown" class="center-block"></div>						
 					</div>    
-					<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
 						<button data-toggle="modal" 
 								data-target="#NP"
 								data-label="Скидка %" 
@@ -497,7 +499,7 @@
 		<div class="section-how-work">
 
 			<div class="container">
-				<div class="col-sm-12 col-md-12 text-center white-title">
+				<div class="col-xs-12 col-sm-12 col-md-12 text-center white-title">
 					КАК МЫ РАБОТАЕМ
 				</div>
 				<div class="row hidden-sm hidden-xs">
@@ -562,23 +564,23 @@
 
 		<div id="link4" class="section-why">
 			<div class="container">
-				<div class="col-sm-12 col-md-12 text-center grey-title">
+				<div class="col-xs-12 col-sm-12 col-md-12 text-center grey-title">
 					ПОЧЕМУ ВЫБИРАЮТ НАС
 				</div>
 				<div class="row">
-					<div class="col-sm-3 col-md-3 text-center">
+					<div class="col-xs-12 col-sm-3 col-md-3 text-center">
 						<img class="line-icon img-responsive" src="img/3line_icon01.png">
 						<p>Заявки обрабатываются быстро. Мы ценим время наших клиентов</p>
 					</div>
-					<div class="col-sm-3 col-md-3 text-center">
+					<div class="col-xs-12 col-sm-3 col-md-3 text-center">
 						<img class="line-icon img-responsive" src="img/3line_icon02.png">
 						<p>Трехценовое предложение позволит выбрать то, что подходит вашему бюджету</p>
 					</div>
-					<div class="col-sm-3 col-md-3 text-center">
+					<div class="col-xs-12 col-sm-3 col-md-3 text-center">
 						<img class="line-icon img-responsive" src="img/3line_icon03.png">
 						<p>Мы несем ответственность за качественное обслуживание наших клиентов</p>
 					</div>
-					<div class="col-sm-3 col-md-3 text-center">
+					<div class="col-xs-12 col-sm-3 col-md-3 text-center">
 						<img class="line-icon img-responsive" src="img/3line_icon04.png">
 						<p>Все виды ремонтных работ</p>
 					</div>                   
@@ -658,19 +660,19 @@
 					Что для нас важно
 				</div>
 				<div class="row">					
-						<div class="col-sm-4 col-md-3 text-center">
-							<img class="img-thumbnail img-responsive" src="img/boss.jpg">
+					<div class="col-sm-4 col-md-3 text-center">
+						<img class="img-thumbnail img-responsive" src="img/boss.jpg">
+					</div>
+					<div class="col-sm-8 col-md-9 crew-text comment-block">
+						<div class="comment-cell">
+							<blockquote>
+								<p>Для нас очень важно работать оперативно.  Мы понимаем насколько сильно желание нашего 
+									клиента сесть в  свой исправный автомобиль и вновь насладится поездками. Мы разделяем 
+									это стремление и стараемся помочь нашим клиентам в этом.</p>
+								<footer>Сергей Сергеевич | Директор магазина</footer>
+							</blockquote>                            
 						</div>
-						<div class="col-sm-8 col-md-9 crew-text comment-block">
-							<div class="comment-cell">
-								<blockquote>
-									<p>Для нас очень важно работать оперативно.  Мы понимаем насколько сильно желание нашего 
-										клиента сесть в  свой исправный автомобиль и вновь насладится поездками. Мы разделяем 
-										это стремление и стараемся помочь нашим клиентам в этом.</p>
-									<footer>Сергей Сергеевич | Директор магазина</footer>
-								</blockquote>                            
-							</div>
-						</div>					
+					</div>					
 				</div>     
 			</div><!-- /.container -->
 		</div><!-- /.content-section-a -->

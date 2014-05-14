@@ -137,7 +137,7 @@
 				<div class="row topp">
 					<div class="col-xs-12 col-sm-12 col-md-12 grey_bottom_border hidden-xs"></div>
 					<div class="col-xs-12 col-sm-3 col-md-4">
-						<a href="#top"><img class="img-responsive" src="img/top_logo.png"></a>
+						<a href="#top" class="logo"><h1>CAR-DAN86</h1></a>
 					</div>
 					<div class="col-sm-3 col-md-3 links hidden-xs">
 						<a href="#link1">Контрактные двигатели</a><br>

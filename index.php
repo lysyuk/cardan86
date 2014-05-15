@@ -137,7 +137,7 @@
 				<div class="row topp">
 					<div class="col-xs-12 col-sm-12 col-md-12 grey_bottom_border hidden-xs"></div>
 					<div class="col-xs-12 col-sm-3 col-md-4">
-						<a href="#top" class="logo"><h1>CAR-DAN86</h1></a>
+						<a href="#top"><img class="img-responsive" src="img/top_logo.png"></a>
 					</div>
 					<div class="col-sm-3 col-md-3 links hidden-xs">
 						<a href="#link1">Контрактные двигатели</a><br>
@@ -460,7 +460,39 @@
 						</div>
 					</div>
 				</div>
-
+				<div class="row">
+					<div class="col-sm-12 col-md-12 text-center grey-title category-block">
+						ПРОЧИЕ ТОВАРЫ
+					</div>
+					<div class="col-sm-6 col-md-3 bottom-25">
+						<div class="part-block">
+							<img class="car-part img-responsive" src="img/pt1.jpg">
+							<p>Шины</p>
+							<button data-xxx="Шины" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 bottom-25">
+						<div class="part-block">
+							<img class="car-part img-responsive" src="img/pt2.jpg">
+							<p>Диски</p>
+							<button data-xxx="Диски" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 bottom-xs-25">
+						<div class="part-block">
+							<img class="car-part img-responsive" src="img/pt3.jpg">
+							<p>Масла</p>
+							<button data-xxx="Масла" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="part-block">
+							<img class="car-part img-responsive" src="img/pt4.jpg">
+							<p>Автохимия</p>
+							<button data-xxx="Автохимия" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
+						</div>
+					</div>
+				</div>
 			</div><!-- /.container -->
 		</div><!-- /.content-section-a -->
 		<!-- ================================ КУЗОВНЫЕ ЗАПЧАСТИ =========================== -->

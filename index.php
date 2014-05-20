@@ -20,6 +20,7 @@ if (isset($_SERVER["HTTP_REFERER"]))
         <meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="google-site-verification" content="lKQHOmXFV2w2Wr3PGCRX9xzjH9VLl_otArv1hCLM-kQ" />
 
         <meta name="description" content="">
         <meta name="author" content="Юрий">

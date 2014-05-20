@@ -4,6 +4,12 @@
  * Version 0.4.0 
  * 
  */
+if (isset($_SERVER["HTTP_REFERER"]))
+{
+	require_once 'bin/core.php';
+	$refererInfo = searchstr($_SERVER['HTTP_REFERER'], ':');
+	$refererInfo = explode(":", $refererInfo);
+}
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -54,6 +60,8 @@
                     <form action="" class="form-horizontal" role="form"
                           autocomplete="off" name="NP">
                         <input type="hidden" id="NPWhichButton" name="NPWhichButton" value="">
+						<input type="hidden" name="referrer" value="<?php if (isset($_SERVER["HTTP_REFERER"])) echo $refererInfo[0]; ?>"/>
+						<input type="hidden" name="keyword" value="<?php if (isset($_SERVER["HTTP_REFERER"])) echo $refererInfo[1]; ?>"/>
                         <div class="modal-header">
                             <button type="button" class="close white" data-dismiss="modal" aria-hidden="true">&times;</button>
                             <h4 class="modal-title" id="NPLabel">Заказ звонка</h4>
@@ -94,6 +102,8 @@
                 <div class="modal-content">
                     <form action="" class="form-horizontal" role="form"
                           autocomplete="off"  name="getPriceList">
+						<input type="hidden" name="referrer" value="<?php if (isset($_SERVER["HTTP_REFERER"])) echo $refererInfo[0]; ?>"/>
+						<input type="hidden" name="keyword" value="<?php if (isset($_SERVER["HTTP_REFERER"])) echo $refererInfo[1]; ?>"/>
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             <h4 class="modal-title" id="getPriceListLabel">Какая цена?</h4>
@@ -178,6 +188,8 @@
 								<div class="top-form-inputs">
 									<h3 class="text-center form_title">Подать заявку</h3>
 									<form action="" role="form" name="getPrice" autocomplete="off">	
+										<input type="hidden" name="referrer" value="<?php if (isset($_SERVER["HTTP_REFERER"])) echo $refererInfo[0]; ?>"/>
+										<input type="hidden" name="keyword" value="<?php if (isset($_SERVER["HTTP_REFERER"])) echo $refererInfo[1]; ?>"/>
 										<div class="form-group">
 											<div class="icon-addon addon-md">
 												<input type="text" class="form-control" name="part" placeholder="Деталь">

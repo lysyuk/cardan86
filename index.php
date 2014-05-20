@@ -20,6 +20,8 @@
 
         <title>Автомагазин запчастей на иномарки в Сургуте - CAR-DAN86</title>
 
+		<link rel="SHORTCUT ICON" type="image/x-icon" href="favicon.ico">
+		<link rel="icon" type="image/png" href="apple-touch-icon-precomposed.png">
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 

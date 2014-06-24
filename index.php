@@ -394,14 +394,14 @@ if (isset($_SERVER["HTTP_REFERER"]))
 							<button data-xxx="Бампера" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3 bottom-xs-25">
+					<div class="col-sm-6 col-md-3 bottom-25">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/kuz3.jpg">
 							<p>Крылья</p>
 							<button data-xxx="Крылья" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3">
+					<div class="col-sm-6 col-md-3 bottom-25">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/kuz4.jpg">
 							<p>Капоты</p>
@@ -412,13 +412,19 @@ if (isset($_SERVER["HTTP_REFERER"]))
 				<div class="row">
 					<div class="col-sm-12 col-md-12 text-center grey-title category-block">
 						ЭЛЕМЕНТЫ ХОДОВОЙ ЧАСТИ
-					</div>
-
+					</div>	
 					<div class="col-sm-6 col-md-3 bottom-25">
 						<div class="part-block">
-							<img class="car-part img-responsive" src="img/hod1.jpg">
-							<p>Амортизаторы</p>
-							<button data-xxx="Амортизаторы" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
+							<img class="car-part img-responsive" src="img/hod4.jpg">
+							<p>Детали подвески</p>
+							<button data-xxx="Стойки стабилизатора" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 bottom-25">
+						<div class="part-block">
+							<img class="car-part img-responsive" src="img/hod3.jpg">
+							<p>Шрусы</p>
+							<button data-xxx="Шрусы" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-3 bottom-25">
@@ -427,19 +433,12 @@ if (isset($_SERVER["HTTP_REFERER"]))
 							<p>Ступичные подшипники</p>
 							<button data-xxx="Ступичные подшипники" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
-					</div>
-					<div class="col-sm-6 col-md-3 bottom-xs-25">
+					</div>					
+					<div class="col-sm-6 col-md-3 bottom-25">
 						<div class="part-block">
-							<img class="car-part img-responsive" src="img/hod3.jpg">
-							<p>Шрусы</p>
-							<button data-xxx="Шрусы" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-3">
-						<div class="part-block">
-							<img class="car-part img-responsive" src="img/hod4.jpg">
-							<p>Стойки стабилизатора</p>
-							<button data-xxx="Стойки стабилизатора" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
+							<img class="car-part img-responsive" src="img/hod1.jpg">
+							<p>Амортизаторы</p>
+							<button data-xxx="Амортизаторы" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
 				</div>
@@ -461,14 +460,14 @@ if (isset($_SERVER["HTTP_REFERER"]))
 							<button data-xxx="Фильтры" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3 bottom-xs-25">
+					<div class="col-sm-6 col-md-3  bottom-25">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/to3.jpg">
 							<p>Ремни</p>
 							<button data-xxx="Ремни" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3">
+					<div class="col-sm-6 col-md-3 bottom-25">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/to4.jpg">
 							<p>Свечи</p>
@@ -494,18 +493,47 @@ if (isset($_SERVER["HTTP_REFERER"]))
 							<button data-xxx="Диски" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3 bottom-xs-25">
+					<div class="col-sm-6 col-md-3 bottom-25">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/pt3.jpg">
 							<p>Масла</p>
 							<button data-xxx="Масла" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3">
+					<div class="col-sm-6 col-md-3  bottom-25">
 						<div class="part-block">
 							<img class="car-part img-responsive" src="img/pt4.jpg">
 							<p>Автохимия</p>
 							<button data-xxx="Автохимия" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
+						</div>
+					</div>
+					
+					<div class="col-sm-6 col-md-3 bottom-25 top-25">
+						<div class="part-block">
+							<img class="car-part img-responsive" src="img/pt5.jpg">
+							<p>Автокрепёж</p>
+							<button data-xxx="Автокрепёж" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 bottom-25 top-25">
+						<div class="part-block">
+							<img class="car-part img-responsive" src="img/pt6.jpg">
+							<p>Щетки</p>
+							<button data-xxx="Щетки" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3  bottom-25 top-25">
+						<div class="part-block">
+							<img class="car-part img-responsive" src="img/pt7.jpg">
+							<p>Лампы</p>
+							<button data-xxx="Лампы" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3  bottom-25 top-25">
+						<div class="part-block">
+							<img class="car-part img-responsive" src="img/pt8.jpg">
+							<p>Аксессуары</p>
+							<button data-xxx="Аксессуары" data-target="#getPriceList" data-toggle="modal" class="getPriceButton btn btn-sm btn-custom">Узнать цены</button>
 						</div>
 					</div>
 				</div>

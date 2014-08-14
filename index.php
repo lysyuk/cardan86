@@ -553,7 +553,7 @@ if (isset($_SERVER["HTTP_REFERER"]))
 			<div class="container">
 				<div class="row">	
 					<div class="col-xs-12 col-sm-12 col-md-12 text-center blue-title sell">
-						УСПЕЙ ПОЛУЧИТЬ СКИДКУ НА КОМПЛЕКТ ВЕСЕННЕГО ТО
+						УСПЕЙ ПОЛУЧИТЬ СКИДКУ НА КОМПЛЕКТ ТО
 					</div>								
 					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 timer-digits">
 						<div id="countdown" class="center-block"></div>						

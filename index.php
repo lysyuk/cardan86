@@ -22,11 +22,11 @@ if (isset($_SERVER["HTTP_REFERER"]))
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="google-site-verification" content="lKQHOmXFV2w2Wr3PGCRX9xzjH9VLl_otArv1hCLM-kQ" />
 		<meta name='wmail-verification' content='21283bd896353305' />
-
-        <meta name="description" content="">
+		<meta name='keywords' content='Автозапчасти в наличии, запчасти для иномарок, запчасти для отечественных авто, склад автозапчастей' />
+        <meta name="description" content="Наш магазин предлагает широкий выбор запчастей для автомобилей импортного производства. Мы занимаемся как розничной, так и оптовой продажей запчастей на заказ. Большой ассортимент автозапчастей в наличии на нашем складе">
         <meta name="author" content="Юрий">
 
-        <title>Автомагазин запчастей на иномарки в Сургуте - CAR-DAN86</title>
+        <title>Автомагазин запчастей на иномарки в Сургуте - CARDAN86.RU</title>
 
 		<link rel="SHORTCUT ICON" type="image/x-icon" href="favicon.ico">
 		<link rel="icon" type="image/png" href="apple-touch-icon-precomposed.png">
